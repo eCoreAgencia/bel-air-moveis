@@ -1,0 +1,384 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:400,700";
+
+body.fale-conosco{
+    form#contact{
+        /*
+           Breakpoints
+           ========================================================================== */
+
+        $screen-xs: 480px;
+        $screen-xs-min: $screen-xs;
+        $screen-sm: 768px;
+        $screen-sm-min: $screen-sm;
+        $screen-md: 992px;
+        $screen-md-min: $screen-md;
+        $screen-lg: 1170px;
+        $screen-lg-min: $screen-lg;
+        $screen-xs-max: ($screen-sm - 1);
+        $screen-sm-max: ($screen-md - 1);
+        $screen-md-max: ($screen-lg - 1);
+        // 
+        /*
+           Grid
+           ========================================================================== */
+
+        $container-max-width: 1170px;
+        $grid-columns: 12;
+        $grid-gutter-width: 14px;
+        $grid-float-breakpoint: $screen-sm-min;
+        $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            max-width: $container-max-width;
+        }
+
+        /* ==========================================================================
+           Mixins
+           ========================================================================== */
+
+        @mixin responsive-visibility($parent) {
+          #{$parent} { display: block !important; }
+
+          table#{$parent} { display: table; }
+
+          tr#{$parent} { display: table-row !important; }
+
+          th#{$parent},
+          td#{$parent} { display: table-cell !important; }
+        }
+
+        @mixin responsive-invisibility($parent) {
+          #{$parent} { display: none !important; }
+        }
+
+        @mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
+          $at1x_path: "#{$path}.#{$ext}";
+          $at2x_path: "#{$path}@2x.#{$ext}";
+
+          background-image: url("/arquivos/#{$at1x_path}");
+
+          @media all and (-webkit-min-device-pixel-ratio : 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+            background-image: url("/arquivos/#{$at2x_path}");
+            background-size: $w $h;
+          }
+        }
+
+        @mixin mq($size, $max: false) {
+          @if ($max) {
+            @media (max-width: $size) {
+              @content;
+            }
+          } @else {
+            @media (min-width: $size) {
+              @content;
+            }
+          }
+        }
+
+        @mixin font-size($sizeValue: 1.6) {
+          font-size: ($sizeValue * 10) + px;
+          // font-size: $sizeValue + rem;
+        }
+
+        @mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+          @for $i from (1 + 1) through $grid-columns {
+            $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+          }
+          #{$list} {
+            position: relative;
+            min-height: 1px;
+            padding-left:  ($grid-gutter-width / 2);
+            padding-right: ($grid-gutter-width / 2);
+          }
+        }
+
+        @mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
+          @for $i from (1 + 1) through $grid-columns {
+            $list: "#{$list}, .col-#{$class}-#{$i}";
+          }
+          #{$list} {
+            float: left;
+          }
+        }
+
+        @mixin calc-grid-column($index, $class, $type) {
+          @if ($type == width) and ($index > 0) {
+            .col-#{$class}-#{$index} {
+              width: percentage(($index / $grid-columns));
+            }
+          }
+          @if ($type == push) and ($index > 0) {
+            .col-#{$class}-push-#{$index} {
+              left: percentage(($index / $grid-columns));
+            }
+          }
+          @if ($type == push) and ($index == 0) {
+            .col-#{$class}-push-0 {
+              left: auto;
+            }
+          }
+          @if ($type == pull) and ($index > 0) {
+            .col-#{$class}-pull-#{$index} {
+              right: percentage(($index / $grid-columns));
+            }
+          }
+          @if ($type == pull) and ($index == 0) {
+            .col-#{$class}-pull-0 {
+              right: auto;
+            }
+          }
+          @if ($type == offset) {
+            .col-#{$class}-offset-#{$index} {
+              margin-left: percentage(($index / $grid-columns));
+            }
+          }
+        }
+
+        @mixin loop-grid-columns($columns, $class, $type) {
+          @for $i from 0 through $columns {
+            @include calc-grid-column($i, $class, $type);
+          }
+        }
+
+        @mixin make-grid($class) {
+          @include float-grid-columns($class);
+          @include loop-grid-columns($grid-columns, $class, width);
+          @include loop-grid-columns($grid-columns, $class, pull);
+          @include loop-grid-columns($grid-columns, $class, push);
+          @include loop-grid-columns($grid-columns, $class, offset);
+        }
+
+
+        /* Rotate */
+        @mixin rotate($deg) {
+          -webkit-transform: rotate($deg);
+          -moz-transform: rotate($deg);
+          -o-transform: rotate($deg);
+          transform: rotate($deg);
+        }
+        /* Rotate */
+
+        /* Border-Radius */
+        @mixin border-radius($radius) {
+          -webkit-border-radius: $radius;
+          -moz-border-radius: $radius;
+          border-radius: $radius;
+        }
+        /* Border-Radius */
+
+        /* Transitions */
+        @mixin transition($transition-property, $transition-time, $method) {
+          -webkit-transition: $transition-property $transition-time $method;
+          -moz-transition: $transition-property $transition-time $method;
+          -ms-transition: $transition-property $transition-time $method;
+          -o-transition: $transition-property $transition-time $method;
+          transition: $transition-property $transition-time $method;
+        }
+        /* Transitions */
+
+
+        /* ==========================================================================
+           Responsive: Utility classes
+           ========================================================================== */
+
+        @include responsive-invisibility('.visible-xs');
+        @include responsive-invisibility('.visible-sm');
+        @include responsive-invisibility('.visible-md');
+        @include responsive-invisibility('.visible-lg');
+
+        .visible-xs-block,
+        .visible-xs-inline,
+        .visible-xs-inline-block,
+        .visible-sm-block,
+        .visible-sm-inline,
+        .visible-sm-inline-block,
+        .visible-md-block,
+        .visible-md-inline,
+        .visible-md-inline-block,
+        .visible-lg-block,
+        .visible-lg-inline,
+        .visible-lg-inline-block { display: none !important; }
+
+        @media (max-width: $screen-xs-max) {
+          @include responsive-visibility('.visible-xs');
+        }
+        .visible-xs-block {
+          @media (max-width: $screen-xs-max) {
+            display: block !important;
+          }
+        }
+        .visible-xs-inline {
+          @media (max-width: $screen-xs-max) {
+            display: inline !important;
+          }
+        }
+        .visible-xs-inline-block {
+          @media (max-width: $screen-xs-max) {
+            display: inline-block !important;
+          }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+          @include responsive-visibility('.visible-sm');
+        }
+        .visible-sm-block {
+          @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            display: block !important;
+          }
+        }
+        .visible-sm-inline {
+          @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            display: inline !important;
+          }
+        }
+        .visible-sm-inline-block {
+          @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            display: inline-block !important;
+          }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+          @include responsive-visibility('.visible-md');
+        }
+        .visible-md-block {
+          @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            display: block !important;
+          }
+        }
+        .visible-md-inline {
+          @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            display: inline !important;
+          }
+        }
+        .visible-md-inline-block {
+          @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            display: inline-block !important;
+          }
+        }
+
+        @media (min-width: $screen-lg-min) {
+          @include responsive-visibility('.visible-lg');
+        }
+        .visible-lg-block {
+          @media (min-width: $screen-lg-min) {
+            display: block !important;
+          }
+        }
+        .visible-lg-inline {
+          @media (min-width: $screen-lg-min) {
+            display: inline !important;
+          }
+        }
+        .visible-lg-inline-block {
+          @media (min-width: $screen-lg-min) {
+            display: inline-block !important;
+          }
+        }
+
+        @media (max-width: $screen-xs-max) {
+          @include responsive-invisibility('.hidden-xs');
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+          @include responsive-invisibility('.hidden-sm');
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+          @include responsive-invisibility('.hidden-md');
+        }
+
+        @media (min-width: $screen-lg-min) {
+          @include responsive-invisibility('.hidden-lg');
+        }
+
+
+        @include make-grid-columns;
+
+        @include make-grid(xs);
+
+        @include mq($screen-sm) {
+          @include make-grid(sm);
+        }
+
+        @include mq($screen-md) {
+          @include make-grid(md);
+        }
+
+        @include mq($screen-lg) {
+          @include make-grid(lg);
+        }
+
+        label {
+            color: #403f44;
+            font-size: 12px;
+        }
+        fieldset{
+            padding: 5px 0;
+        }
+        input{
+            border: 1px solid #403f44;
+            &[type="text"]{
+                width: 100%;
+                color: #000;
+                padding: 5px;
+                font-size: 12px;
+                font-style: italic;
+                font-family: 'Roboto', sans-serif;
+            }
+            &[type="submit"] {
+                color: #fff;
+                font-size: 16px;
+                margin: 20px 7px;
+                font-weight: 700;
+                margin-top: 15px;
+                padding: 5px 20px;
+                text-align: center;
+                background: #403f44;
+                text-transform: uppercase;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #403f44;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-style: italic;
+            height: 150px;
+            resize: none;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #403f44;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .error-input {
+            border: 1px solid #ad0000 !important;
+        }
+        #hold-errors {
+            display: none;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ad0000;
+        }
+        #hold-success {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #4dad00;
+        }
+    }
+}

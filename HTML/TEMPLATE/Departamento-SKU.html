@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+    <vtex:template id="commonHead" />
+    <link href="/arquivos/sku-e-paginacao.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <div class="all">
+
+        <!--teste431-->
+        <vtex:template id="Header-Persistente-N" />
+
+        <div id="mainContent">
+
+            <div class="topDepartment">
+
+                <div class="wrapper">
+
+                    <aside class="navSidebar">
+
+                        <div class="filterOptions">
+
+                            <vtex.cmc:singleDepartmentNavigator/>
+
+                        </div>
+
+                    </aside>
+
+                    <section class="pageContent " style="width:75.6% !important;">
+
+                      <div class="topName">
+
+                          <vtex.cmc:searchTitle />
+
+                      </div>
+
+                      <vtex.cmc:searchResult layout="ab173738-30fb-49e9-802e-f4583e68c495" itemCount="20" columnCount="20" />
+
+                        <div class="pageContent">
+                            <section class="shelfCarousel">
+                                <vtex:contentPlaceHolder id="Mais Vendidos" />
+                            </section>
+                            <section class="shelfCarousel">
+                                <vtex:contentPlaceHolder id="Baixou o Preço" />
+                            </section>
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="pageContent">
+                <section class="txtContent">
+                    <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
+                    <vtex:contentPlaceHolder id="Seo-Departamento" />
+                </section>
+            </div>
+
+        </div><!-- /mainContent-->
+
+        <vtex:template id="footer" />
+    </div><!--/all-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <link href="/arquivos/descricao.css" rel="stylesheet" type="text/css" />
+    <vtex:template id="commonBottomNew" />
+
+
+</body>
+</html>

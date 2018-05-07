@@ -1,0 +1,13 @@
+body{padding-top:164px !important;}
+.headerNormal{ margin-top:-164px; }
+
+.headerPersistente{
+    position:fixed!important;
+    z-index:100000;
+    width:100%;
+    background:#fff;
+    display:none;box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);
+}
+
+.headerPersistente.hp-isHome{margin-top:-164px;}
+.headerPersistente.hp-noHome{margin-top:-205px;}

@@ -1,0 +1,184 @@
+<style type="text/css">
+.modal-bg{
+  background-color:rgba(0,0,0,0.4);
+  position:fixed;
+  z-index:9999999999999999999999999999;
+  top:0;
+
+}
+
+.modal-bf{
+  background:#F1FF00;
+  width:690px;
+  height:364px;
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  position:fixed;
+  top: calc(50vh - (/* height */250px / 2));
+  left: calc(50vw - (/* width */690px / 2));
+  z-index:99999999999999999999999999999;
+}
+
+.modal-bf .bg-2{
+  background-image:url(/arquivos/super-black-friday-bg.png);
+  background-repeat:no-repeat;
+  width:344px;
+  height:366px;
+}
+
+.modal-bf .box-align-items{
+  display:flex;justify-content:space-between;
+}
+
+.modal-bf .close{
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+
+.close-icon {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  margin:10px 0px;
+}
+
+.modal-bf .resposta-bf{
+  display:block;font-size:1em;
+  margin-top:60px;
+  text-align:center;
+
+  width:330px;
+}
+
+
+.modal-bf .retorno-bf{
+  display:block;
+  font-size:1.2em;
+  padding:4px;
+}
+.modal-bf .texto{
+  width:76%;
+  margin:0 auto;
+  text-align:justify;
+}
+.modal-bf p{
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', sans-serif;
+  margin-bottom:10px;
+  font-size:1.92em;
+  margin-top:0px;
+}
+
+.modal-bf p strong{
+  font-weight:bold;
+
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.modal-bf p strong b{
+  font-weight:600;
+  font-size:1.4em;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  text-shadow:3px 3px #c5d10e
+}
+.modal-bf input{
+  padding:6px;
+  border:none;
+  border:1px solid #000;
+  width:76%;
+  outline:none;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight:500;
+  color:#555;
+  margin-bottom:10px;
+}
+
+.modal-bf #btnBF{
+  margin-top:20px;
+  cursor:pointer;
+  outline:none;
+}
+</style>
+
+<div class="modal-bg">
+<div class="modal-bf">
+
+  <div class="close">
+
+    <div class="close-icon">
+      <img src="/arquivos/belair-bf-close-icon.png" />
+    </div>
+
+  </div>
+
+  <div class="box-align-items">
+
+    <div class="bg-2"></div>
+
+      <div class="resposta-bf">
+        <div class="texto">
+          <p>Fique sabendo primeiro<br /> e <strong>garanta <b>+ 5% OFF</b> </strong><br />na sua primeira compra!</p>
+        </div>
+
+        <span class="retorno-bf"></span>
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" />
+        <input type="text" name="email" id="email" placeholder="E-mail"/>
+        <input type="text" name="departamento" id="departamento" placeholder="Departamento de Maior Interesse"/>
+        <br />
+        <div id="btnBF">
+          <img src="/arquivos/belair-bf-cadastrese.png" alt="cadastre-se" title="cadastre-se"/>             </div>
+
+    </div>
+
+   </div>
+
+</div>
+
+</div>
+<script src="/arquivos/black-friday-newsletter-v3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  WebFontConfig = {
+    google: { families: [ 'Lato:300i,400,400i,700' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+  var disabledEventPropagation = function(event) {
+    if (event.stopPropagation) {
+      event.stopPropagation();
+    } else if (window.event) {
+      window.event.cancelBubble = true;
+    }
+  }
+
+  $(".modal-bf").on('click', function(event){
+    disabledEventPropagation(event);
+  });
+
+
+  $(".modal-bg, .close-icon").on('click', function(){
+    $(".modal-bf, .modal-bg").fadeOut('fast');
+  });
+
+  var w = $(document).width();
+
+  $(".modal-bg").css('width',w);
+  $(".modal-bg").css('height','100%');
+
+});
+</script>

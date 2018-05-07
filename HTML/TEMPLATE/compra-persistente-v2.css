@@ -1,0 +1,74 @@
+body.compra-persistente-2 {
+    position: relative;
+}
+
+.compra-persistente-2 .buyProductButton {
+    padding-bottom: 30px;
+}
+
+.compra-persistente-2 .buyProduct.compra-persistente {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 5px 0;
+    position: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+.compra-persistente-2 .productSpec,
+.compra-persistente-2 .buyProduct.compra-persistente .prodQtd {
+    padding: 10px;
+}
+
+.compra-persistente-2 .mainProductInfo .buy-button {
+    float: none;
+    margin-top: 5px;
+    display: inline-block !important;
+}
+
+.compra-persistente-2 .productSpec,
+.compra-persistente-2 .buyProduct.compra-persistente .prodQtd {
+    padding: 10px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.compra-persistente-2 .buyProductButton,
+.compra-persistente-2 .mainProductInfo .priceProduct {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.compra-persistente-2 .priceProduct,
+.compra-persistente-2 .buyProductButton {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.compra-persistente-2 .buyProduct.compra-persistente.fixed {
+    height: 80px;
+    bottom: 480px;
+    position: absolute;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+.compra-persistente-2 .buyProduct.compra-persistente.fixed .priceProduct{
+    margin-top: 9px;
+}
+
+body.compra-persistente-2 .copyright {
+    padding-bottom: 0 !important;
+}

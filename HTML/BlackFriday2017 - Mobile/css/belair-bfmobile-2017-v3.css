@@ -1,0 +1,131 @@
+body.mobile-belair-bf-2017 .shelfCarousel li {
+	vertical-align: top;
+	display: inline-block;
+}
+
+body.mobile-belair-bf-2017 .shelfCarousel li {
+	padding: 3px;
+}
+
+body.mobile-belair-bf-2017.product .share,
+body.mobile-belair-bf-2017 .globalClass_ET,
+body.mobile-belair-bf-2017 .shelfCarousel.bf-shelf-2,
+body.mobile-belair-bf-2017 .mainProductImage .thumbs,
+body.mobile-belair-bf-2017 .prateleira li .shelfOverlay,
+body.mobile-belair-bf-2017.product .mainProductImage .slick-dots,
+body.mobile-belair-bf-2017.product .mainProductImage #include:before,
+body.mobile-belair-bf-2017 .prateleira li .ProductSkuVariacoes .prev-arrow,
+body.mobile-belair-bf-2017 .prateleira li .ProductSkuVariacoes .next-arrow {
+	display: none !important;
+}
+
+body.mobile-belair-bf-2017 .prateleira li .productName a {
+	height: auto;
+}
+
+body.mobile-belair-bf-2017 .shelfCarousel ul.slick-slider {
+	overflow: hidden;
+}
+
+body.mobile-belair-bf-2017 .shelfCarousel.bf-shelf-1 .section-title,
+body.mobile-belair-bf-2017.home .shelfCarousel.bf-shelf-3 .section-title,
+body.mobile-belair-bf-2017.home .shelfCarousel.bf-shelf-5 .section-title {
+	padding-top: 35px;
+	margin-bottom: 35px;
+}
+
+body.mobile-belair-bf-2017 .copyright .dev a {
+	width: 76px;
+}
+
+body.mobile-belair-bf-2017.home #mainContent {
+	padding-top: 0;
+}
+
+body.mobile-belair-bf-2017.home .mainGallery {
+	margin-bottom: 110px;
+}
+
+/******* Pagina de Produto *******/
+body.mobile-belair-bf-2017 .lightbox .lightboxHeader {
+	padding: 20px !important;
+}
+
+body.mobile-belair-bf-2017 .mainProductImage #include {
+	width: 100% !important;
+	display: block !important;
+}
+
+body.mobile-belair-bf-2017.product .mainProductImage {
+	margin: 0;
+	width: 100%;
+	padding-left: 0;
+}
+
+body.mobile-belair-bf-2017.product #mainContent {
+	padding-top: 15px;
+}
+
+body.mobile-belair-bf-2017.product .mainProductHeader .trustvox-rate,
+body.mobile-belair-bf-2017.product .mainProductHeader .trustvox-rate2,
+body.mobile-belair-bf-2017.product .mainProductHeader .productRef {
+	width: auto;
+	vertical-align: top;
+	display: inline-block;
+}
+
+body.mobile-belair-bf-2017.product .mainProductHeader .trustvox-rate2 {
+	margin: 0 5px;
+}
+
+body.mobile-belair-bf-2017.product .mainProduct {
+	margin: 0 5px 30px;
+	padding: 15px 14px 40px;
+}
+
+body.mobile-belair-bf-2017.product .mainProductInfo .buyQuantity .quant-button {
+	width: 32px;
+}
+
+body.mobile-belair-bf-2017.product .productDetails,
+body.mobile-belair-bf-2017.product .trustvoxContainer {
+	background-color: #fff;
+}
+
+body.mobile-belair-bf-2017.product .productDetails {
+	margin: 0px 0px 30px;
+}
+
+body.mobile-belair-bf-2017.product .flag-bf {
+	max-width: 248px;
+}
+
+body.mobile-belair-bf-2017.product .flag-bf:after {
+    border-bottom: 20px solid #FE000C;
+}
+
+body.mobile-belair-bf-2017.product .flag-bf.info.montagem:after {
+    border-bottom: 31px solid #E5F73E;
+}
+
+body.mobile-belair-bf-2017.product .productDetails ul.tabs li {
+	font-size: 11px;
+	max-width: 101px;
+	padding: 15px 9px;
+}
+
+body.mobile-belair-bf-2017.product #caracteristicas {
+	padding: 20px 30px;
+}
+
+@media only screen and (max-width: 380px) {
+	body.mobile-belair-bf-2017.product .mainProductInfo .buyQuantity,
+	body.mobile-belair-bf-2017.product .mainProductInfo .buyProductButton {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	body.mobile-belair-bf-2017.product .mainProductInfo .buyProductButton .buy-button {
+		margin-left: 0;
+	}
+}

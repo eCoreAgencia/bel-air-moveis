@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <vtex:metaTags/>
+
+    <vtex:template id="mobile-bf2017-common-head" />
+</head>
+
+<body class="home">
+    <div class="all">
+        <vtex:template id="mobile-header" />
+        
+        <div id="mainContent">
+            <section class="mainGallery">
+                <vtex:contentPlaceHolder id="banner tv" />
+            </section><!-- /mainGallery -->
+
+            <div id="mainContent">
+                <div class="wrapper">    
+                    <section class="shelfCarousel bf-shelf-1">
+                        <!-- <h2 class="tlt-bf-red-Shelf">Queridinhos da Black Friday</h2> -->
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-1-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-1" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-2">
+                        <vtex:contentPlaceHolder id="bf-shelf-2" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-3">
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-3-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-3" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-4">
+                        <vtex:contentPlaceHolder id="categorias-slider"/>
+                    </section>
+                    <section class="shelfCarousel bf-shelf-5">
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-5-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-5" />
+                    </section>
+                </div>
+            </div><!-- /mainContent-->
+        </div>
+
+        <vtex:template id="mobile-footer" />
+    </div><!-- all -->
+
+    <vtex:template id="mobile-bf2017-commonBottom" />
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bf-shelf-1").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+
+            $(".bf-shelf-2").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+
+            $(".bf-shelf-3").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+
+            $(".bf-shelf-4").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+
+            $(".bf-shelf-5").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+
+            $('.bannerCategories .Menu nav button').click(function(){
+                var dataItem = $(this).attr('data-item');
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+                $(this).parents('.bannerCategories').each(function(){
+                    $(this).find('.images img').removeClass('active');
+                    $(this).find('.images img[data-item="'+dataItem+'"]').addClass('active');
+                    $(this).find('.texts div').removeClass('active');
+                    $(this).find('.texts div[data-item="'+dataItem+'"]').addClass('active');    
+                });
+            });
+        });
+    </script>
+    </body>
+</html>

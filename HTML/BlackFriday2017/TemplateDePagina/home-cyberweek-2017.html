@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+    <head>
+        <vtex:metaTags/>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <vtex:template id="commonHead-cybermonday-2017" />
+        <meta name="google-site-verification" content="EnOTppGyL9pZ7tTd1YMHfcKkiL_EtZSm1Dii-8cc8b4" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+        <link rel="stylesheet" href="/arquivos/home-com-variacao-sku.css" />
+    </head>
+
+    <body>
+        <div class="all">
+            <h1 class="seoStoreName">Belair Móveis</h1>
+            
+            <vtex:template id="Header-persistente-CW" />
+            
+            <section class="mainGallery fullGallery">
+                <vtex:contentPlaceHolder id="banner tv" />
+            </section>
+            <div style="background:#F2DE13">
+                <div class="wrapper newsletterBox newsletterBoxTop">
+                    <div>
+                        <div class="newsletter" id="newsletterHeader">
+                            <div class="form formNewsletterTop">
+                                <div class="infoNews infoNewsTop">
+                                    <h3 class="newsletter-title" style="">RECEBA NOSSAS PROMOÇÕES E OFERTAS
+                                            <span>Assine agora newsletter e fique por dentro.</span>
+                                    </h3>
+                                </div>
+                                <div class="formContent formContentTop">
+                                    <fieldset class="fieldNewsletterClientName fieldClientNameTop">
+                                        <label>Nome:</label>
+                                        <input class="newsletterClientName newsClientNameTop" name="nome" placeholder="Digite seu nome" size="20" type="text" />
+
+                                    </fieldset>
+                                    <fieldset class="fieldNewsletterClientEmail fieldClientEmailTop">
+                                        <label>Email:</label>
+                                        <input class="newsletterClientEmail newsClientEmailTop" name="email" placeholder="Digite seu e-mail" size="20" type="text" />
+
+                                    </fieldset>
+                                    <input class="newsletterButtonOK newsButtonOK" name="BTEnvia" value="ok" type="button" />
+                                </div>
+                            </div>
+                            <div id="message" class="messageNewsletterHeader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainContent">
+                <div class="wrapper">    
+                    <section class="shelfCarousel bf-shelf-1">
+                        <!-- <h2 class="tlt-bf-red-Shelf">Queridinhos da Black Friday</h2> -->
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-1-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-1" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-2">
+                        <vtex:contentPlaceHolder id="bf-shelf-2" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-3">
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-3-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-3" />
+                    </section>
+                    <section class="shelfCarousel bf-shelf-4">
+                        <vtex:contentPlaceHolder id="categorias-slider"/>
+                    </section>
+                    <section class="shelfCarousel bf-shelf-5">
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="bf-shelf-5-Title" />
+                        </div>
+                        <vtex:contentPlaceHolder id="bf-shelf-5" />
+                    </section>
+                </div>
+            </div><!-- /mainContent-->
+
+            <vtex:template id="footer" />
+        </div><!--/all-->
+        
+        <vtex:template id="commonBottom-cybermonday-2017" />
+        
+        
+        <script src="/arquivos/addMaisVendidosLinkMenu.js"></script>
+        <script src="/arquivos/newsletterTopMessage.js"></script>
+        <script src="/arquivos/shelf-discount-v2.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".bf-shelf-1").each(function() {
+                    $(this).find("ul").slick({
+                        dots: false,
+                        arrows: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        pauseOnHover: false,
+                        autoplay: false,
+                        autoplaySpeed: 4000
+                    });
+                });
+
+                $(".bf-shelf-2").each(function() {
+                    $(this).find("ul").slick({
+                        dots: false,
+                        arrows: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        pauseOnHover: false,
+                        autoplay: false,
+                        autoplaySpeed: 4000
+                    });
+                });
+
+                $(".bf-shelf-3").each(function() {
+                    $(this).find("ul").slick({
+                        dots: false,
+                        arrows: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        pauseOnHover: false,
+                        autoplay: false,
+                        autoplaySpeed: 4000
+                    });
+                });
+
+                $(".bf-shelf-4").each(function() {
+                    $(this).find("ul").slick({
+                        dots: false,
+                        arrows: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        pauseOnHover: false,
+                        autoplay: false,
+                        autoplaySpeed: 4000
+                    });
+                });
+
+                $(".bf-shelf-5").each(function() {
+                    $(this).find("ul").slick({
+                        dots: false,
+                        arrows: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        pauseOnHover: false,
+                        autoplay: false,
+                        autoplaySpeed: 4000
+                    });
+                });
+
+                $('.bannerCategories .Menu nav button').click(function(){
+                    var dataItem = $(this).attr('data-item');
+                    $(this).addClass('active');
+                    $(this).siblings().removeClass('active');
+                    $(this).parents('.bannerCategories').each(function(){
+                        $(this).find('.images img').removeClass('active');
+                        $(this).find('.images img[data-item="'+dataItem+'"]').addClass('active');
+                        $(this).find('.texts div').removeClass('active');
+                        $(this).find('.texts div[data-item="'+dataItem+'"]').addClass('active');    
+                    });
+                });
+            });
+            $(window).load(function(){
+                $('.bestPrice').each(function(){
+                    $(this).find('b').text($(this).find('b').text().replace('á vista', 'à vista'));
+                });
+            });
+        </script>
+    </body>
+</html>

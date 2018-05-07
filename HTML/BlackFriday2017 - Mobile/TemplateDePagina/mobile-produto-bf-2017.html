@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <vtex:metaTags/>
+    
+    <vtex:template id="mobile-bf2017-common-head" />
+    <script type="text/javascript">
+        var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
+        _trustvox_shelf_rate.push(['_storeId', '72455']);
+        _trustvox_shelf_rate.push(['_productContainer', '.mainProduct']);
+    </script>
+    <script type="text/javascript" async="true" src="//s3-sa-east-1.amazonaws.com/trustvox-rate-widget-js/widget.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            window._trustvox =  [];
+            _trustvox.push(['_storeId', '72455']);
+
+            _trustvox.push(['_productId',  skuJson.productId]);
+            _trustvox.push(['_productName', skuJson.name]);
+            _trustvox.push(['_productPhotos', [skuJson.skus[0].image]]);
+
+            (function() {
+                var tv = document.createElement('script'); tv.type = 'text/javascript'; tv.async = true;
+                tv.src = '//trustvox-production-assets.s3.amazonaws.com/assets/trustvox.1.min.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(tv, s);
+            })();
+            $('.trustvox-fluid-jump').on('click', function(event) {
+                event.preventDefault();
+                var offset = $(this).offset().top;
+                $('html, body').animate({scrollTop:offset}, 500);
+            });
+            if(typeof window.dataLayer == 'object'){
+                if(dataLayer.length){
+                    $('.trustvox-shelf-container').attr('data-trustvox-product-code-js', dataLayer[0].productId);
+                }
+            }
+        });
+    </script>
+    <div class="all">
+        <vtex:template id="mobile-header" />
+        
+        <div id="mainContent">
+            <div  class="wrapper">
+                <div class="mainProduct" itemscope="" itemtype="http://schema.org/Product">
+
+                    <div class="mainProductHeader">
+                        <h1 class="productTitle"><vtex.cmc:productName/></h1>
+                        <span class="productRef"><span>Cód:</span> <vtex.cmc:skuReference/></span>
+                        <div class="trustvox-rate">
+                            <a class="trustvox-fluid-jump trustvox-widget-rating" href="#trustvox-reviews" title="Pergunte e veja opiniões de quem já comprou">
+                                <div class="trustvox-shelf-container" data-trustvox-product-code-js="dataLayer[0].productId" data-trustvox-should-skip-filter="true" data-trustvox-display-rate-schema="true"></div>
+                            </a>
+                        </div>
+                        <div class="trustvox-rate2"><a class="rating-click-here" href="#trustvox-reviews">Clique e veja!</a></div>
+                    </div>
+
+                    <div class="mainProductImage">
+                        <div class="imageZoom ico">
+                            <i class="icon-expand"></i> Zoom
+                        </div>
+        
+                        <vtex.cmc:ProductImage zoom="off" />
+                        
+                        <div class="share ico lightboxTrigger" data-target="share" data-position="center">
+                            <i class="icon-share"></i> Compartilhar
+                        </div>
+                        <div class="flags">
+                            <vtex.cmc:hightLight/>
+                        </div>
+                    </div>
+                
+                    <div class="mainProductInfo">
+                        
+                        <div class="skuSelection">
+                            <vtex.cmc:skuSelection />
+                        </div>
+
+                        <div class="skuPrice">
+                            <vtex.cmc:skuPrice/>
+                        </div>
+                        
+                        <div class="buyAndQuantity">
+                            <div class="buyQuantity">
+                                <span class="quant-prefix">Qtd.</span>
+                                <a href="#" class="quant-button quant-minus">-</a>
+                                <input type="number" class="quant-input" id="sku-buy-quantity" maxlength="2" min="1" max="99" value="1"/>
+                                <a href="#" class="quant-button quant-plus">+</a>
+                            </div>
+                            <div class="buyProductButton">                  
+                                <vtex.cmc:BuyButton />
+                            </div>     
+                        </div>
+
+                        <div class="flag-bf paymentInstallmentsRules">
+                            <strong>
+                                De 1x a 6x com desconto de 5%
+                            </strong>
+                        </div>
+                        
+                        <div class="flag-bf info montagem">
+                            <p>Entrega e montagem grátis:  Rio e Grande Rio (Exceto produtos de cozinha)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="productDetails">
+                <ul class="tabs">
+                    <li class="tab-sobre">Sobre o Produto</li>
+                    <li class="tab-pgto">Opções de Parcelamento</li>
+                    <li class="tab-frete">Calcular o Prazo</li>
+                </ul>
+                <div class="content-details">
+                    <section class="tab-sobre active">
+                        <vtex.cmc:ProductDescription/>
+                    </section>
+                    <section class="tab-pgto">
+                        <vtex.cmc:OtherPaymentMethod/>
+                    </section>
+                    <section class="tab-frete">
+                        <vtex.cmc:shippingValue/>
+                    </section>
+                </div>
+                <vtex.cmc:productSpecification/>
+            </section><!-- productDescription -->
+            
+            <div class="trustvoxContainer">
+                <h3 id="trustvox-reviews">Pergunte e veja opiniões de quem já comprou</h3>
+                <div id="_trustvox_widget"></div>
+            </div>
+        </div>       
+        
+        <vtex:template id="mobile-footer" />
+
+        <div class="lightbox" id="share">
+            <div class="lightboxOverlay"></div>
+
+            <div class="lightboxContent">
+                <div class="lightboxAction">
+                    <span class="lightboxTriggerClose ico">
+                        <i class="icon-close"></i>fechar
+                    </span>
+                </div>
+
+                <div class="lightboxContentInner">
+                    <h2 class="lightbox__title mainTitle">Compartilhe</h2>
+
+                    <div class="socialMediaLinks shareProduct">
+                        <a href="#" class="socialMediaLinks__item" data-social="facebook">
+                            <i class="icon-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="socialMediaLinks__item" data-social="twitter">
+                            <i class="icon-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="socialMediaLinks__item" data-social="pinterest">
+                            <i class="icon-pinterest"></i>
+                            <span>Pinterest</span>
+                        </a>
+                        <a href="#" class="socialMediaLinks__item" data-social="whatsapp">
+                            <i class="icon-whatsapp"></i>
+                            <span>Whatsapp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- all -->
+    
+    <vtex:template id="mobile-bf2017-commonBottom" />
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.productSpec').insertAfter('.buyProduct');
+
+            $('.tabs li').click(function(){
+                var myClass = $(this).attr('class');
+                
+                $('.tabs li').removeClass('active');
+                $(this).addClass('active');
+
+                $('.content-details section').removeClass('active');
+                $('.content-details section.'+myClass+'').addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

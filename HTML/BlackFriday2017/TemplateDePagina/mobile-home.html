@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <vtex:metaTags/>
+
+    <vtex:template id="mobile-commonHead" />
+</head>
+
+<body class="home">
+    <div class="all">
+        <vtex:template id="mobile-header" />
+        
+        <div id="mainContent">
+            <section class="mainGallery">
+                <vtex:contentPlaceHolder id="banner tv" />
+            </section><!-- /mainGallery -->
+
+            <section class="diferenciais">
+                <ul>
+                    <li class="entrega">
+                        <i class="icon-truck"></i>
+                        <p><a href="/institucional/entrega-montagem">Entrega e Montagem grátis no Rio e Grande Rio*</a></p>
+                    </li>
+                    <li class="xentrega">
+                        <i class="icon-card"></i>
+                        <p>Pague em Até 10x sem juros no cartão</p>
+                    </li>
+                </ul>
+            </section><!-- /diferenciais -->
+
+            <section class="featuredProducts shelfCarousel">
+                <vtex:contentPlaceHolder id="Novidades" />
+            </section><!-- /featuredProducts -->
+
+            <section class="featuredBanners ourCollectionsNew">
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Rack" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Todas" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Salas" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Quartos" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Sofás" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Planejados" /></div>
+            </section><!-- /ourCollectionsNew -->
+
+            <section class="loveProducts">
+                <div class="loved-products-banner fullbanner">
+                    <vtex:contentPlaceHolder id="loveProductsBannerSingle" />
+                </div>
+                <div class="loved-products-shelf shelfBanner">
+                    <vtex:contentPlaceHolder id="loveProductsShelf" />
+                </div>
+            </section><!-- /loveProducts -->
+        </div>
+
+        <vtex:template id="mobile-footer" />
+    </div><!-- all -->
+
+    <vtex:template id="mobile-commonBottom" />
+</body>
+</html>

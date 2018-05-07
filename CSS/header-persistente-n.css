@@ -1,0 +1,21 @@
+/*164 | 205 */
+body{padding-top:230px !important;}
+.headerNormal{ margin-top:-230px; }
+
+.headerPersistente{
+position:fixed!important;
+z-index:100;
+width:100%;
+background:#fff;
+display:none;box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);
+}
+
+.headerPersistente.hp-isHome{margin-top:-164px;}
+.headerPersistente.hp-noHome{margin-top:-271px;}
+
+.searchBoxPersistente fieldset{ width:786px !important; }
+.logoPersistente{ width:117px;height:117px;top:0px !important; }
+.logoPersistente .logoImg{ background-image:none; }
+.sContPersistente{padding-top:0px !important; }
+.pageHeaderMob { height:80px !important; }
+.imgHeaderMob{ position:absolute; }

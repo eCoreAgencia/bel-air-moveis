@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+    <vtex:template id="commonHead" />
+</head>
+
+<body>
+    <div class="all">
+        <vtex:template id="header" />
+        
+        <div id="mainContent">
+            <div class="topDepartment">
+                <div class="wrapper">
+                    <aside class="navSidebar">
+                        <div class="filterOptions">
+                            <vtex.cmc:singleDepartmentNavigator/>
+                        </div>
+                    </aside>
+
+                    <section class="bannerDepartment">
+                        <vtex:contentPlaceHolder id="Banner Departamento" />
+                    </section>
+                </div>
+            </div>
+            
+            <div class="pageContent">
+                <section class="shelfCarousel">
+                    <vtex:contentPlaceHolder id="Mais Vendidos" />
+                </section>
+                <section class="shelfCarousel">
+                    <vtex:contentPlaceHolder id="Baixou o Preço" />
+                </section>
+            </div>
+            
+            <div class="wrapper">
+                <section class="txtContent">
+                    <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
+                    <vtex:contentPlaceHolder id="Seo Departamento" />
+                </section>
+            </div>
+            
+        </div><!-- /mainContent-->
+
+        <vtex:template id="footer" />
+    </div><!--/all-->
+    <link href="/arquivos/descricao-v1.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <vtex:template id="commonBottom" />
+</body>
+</html>

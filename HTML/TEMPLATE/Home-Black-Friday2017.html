@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+
+    <!--meta name="google-site-verification" content="8fgVoqfVjaWhtwKetAzHmLUh3lLFHOS-68vaIY9v5dc" /-->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <vtex:template id="commonHead" />
+    <meta name="google-site-verification" content="EnOTppGyL9pZ7tTd1YMHfcKkiL_EtZSm1Dii-8cc8b4" />
+    <link rel="stylesheet" href="/arquivos/skuVariacaoHome.css" />
+</head>
+
+<body style="padding-top:164px !important;">
+    <div class="all">
+        <h1 class="seoStoreName">Belair</h1>
+        <div class="headerNormal" style="margin-top:-164px !important;">
+            <vtex:template id="header" />
+        </div>
+        <div id="teste" class="headerPersistente" style="position:fixed !important;z-index:100000;width:100%;background:#fff;margin-top:-164px;display:none;box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);">
+
+            <vtex:template id="header-persistente" />
+
+        </div>
+
+        <style>
+
+            .wrp .title{ font-size: 4em;
+                    color: #000;
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    margin-bottom: 50px; }
+
+            .blackFriday{
+                display:flex;
+                justify-content:space-evenly;
+                background:#000;
+                padding:2%;
+                margin-top:-40px;
+                background-image:url(/arquivos/granulado-2.png);
+            }
+
+            .blackFriday .header-title{
+                min-width:46%;height:100px;margin-top:16px;text-align:left;
+            }
+
+            /*.blackFriday .header-title h2{
+                font-size:8.6em;
+                font-weight:bold;
+                color:#F1DE22;
+            }
+
+            .blackFriday .header-title p{
+                color:#F1DE22;
+                font-size:3.4em;
+            }
+            */
+            .blackFriday .blackFriday-Countdown{
+                padding-top:20px;
+            }
+
+
+
+            .newsletterBlackFriday{
+                background:#F1FF00;
+                padding:2%;
+                margin-top:20px;
+
+            }
+            .newsletterBlackFriday .text p{
+
+                font-size:2em;
+            }
+
+            .newsletterBlackFriday .text p strong{ font-weight:bold; }
+
+            .newsletterBlackFriday .text{
+                font-size:1em;
+            }
+
+            .newsletterBlackFriday #nome{
+
+                font-size: 1.4em;
+                padding: 14px;
+                color: #000;
+                font-weight:bold;
+                min-width:240px;
+                margin-right:20px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .newsletterBlackFriday #email{
+
+                font-size: 1.4em;
+                padding: 12px;
+                color: #000;
+                min-width: 270px;
+                max-width:400px;
+                font-weight: bold;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            /*.newsletterBlackFriday #btnBF{
+
+                padding:12px;
+                background:#000;
+                color:#fff;
+                border:0px;
+                font-size:1.4em;
+                font-weight:bold;
+                cursor:pointer;
+            }*/
+
+
+
+
+
+
+
+            .boxOne{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 2%;
+                align-items: center;
+                max-width: 1400px;
+                margin: 0 auto;
+
+            }
+
+            .boxOne .oferta{
+                max-width:300px;
+                width:300px;
+                min-height:300px;
+
+            }
+
+            .boxOne .oferta .box-banner{
+                border:1px solid #F1FF00;
+                margin-bottom:10px;
+            }
+
+            .boxOne .oferta .box-info{
+                background:#F1FF00;display:flex;justify-content:space-between;padding:10px;align-items:center;cursor:pointer;
+            }
+
+
+            .boxOne .oferta .box-info .box-off{ width: 86%; }
+            .boxOne .oferta .box-info .box-off h3{font-family:'Lato', sans-serif;font-size:3em;font-weight:bold; padding-left:10px;}
+            .boxOne .oferta .box-info .box-off p{font-family:'Lato', sans-serif;font-size:1.6em;font-weight:bold; padding-left:10px;}
+
+
+            .boxOne .oferta .categoria h3{
+                font-family:'Lato', sans-serif;font-size:3em;font-weight:bold;margin-top:10px;margin-bottom:10px;
+            }
+
+            .boxOne .oferta .categoria p{
+                font-size:1.4em;margin-bottom:20px;
+            }
+            .boxOne .oferta .categoria .btn-conferir{ cursor:pointer; }
+            /*
+            .boxOne .oferta .categoria .btn-conferir{
+                display:flex;justify-content:left;background:#F1FF00;padding:6px;width:50%;align-items:center;cursor:pointer;
+            }
+
+            .boxOne .oferta .categoria .btn-conferir div:first-child{
+                font-size:1.8em;font-weight:bold;text-transform:uppercase;padding-top:2px;padding-left:4px;
+            }
+
+            .boxOne .oferta .categoria .btn-conferir div:last-child{
+                padding-top:7px;
+            }*/
+
+
+
+            .boxOne .oferta .desc{
+                background:#F1DE22;
+            }
+
+            .text-seo-full{
+                background:#000;
+                background-image:url(/arquivos/granulado-2.png);
+                padding:2%;
+            }
+            .text-seo-full h2{
+                font-family:'Lato', sans-serif;
+                font-size: 3em;
+                font-weight: bold;
+                color: #F0DC21;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+
+            .text-seo-full p{
+                font-family:'Lato', sans-serif;
+                font-size: 2em;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 30px;
+                padding:0 20%;
+            }
+
+            .black-box{
+display:flex;justify-content:center;align-items:center;font-size:1.4em;color:#fff;min-height:390px;box-sizing: border-box;
+}
+.black-box-text{
+background:#000;padding:20px;min-height:320px;height:390px;box-sizing: border-box;overflow:hidden;max-width:400px;
+}
+.black-box-text h4{ color:#F1DE22;font-weight:bold; margin-bottom:20px;font-family:'Lato', sans-serif; font-size:1.4em; }
+
+.black-box-text p{ font-family:'Lato', sans-serif;color:#fff; line-height:120%; }
+.black-box-arrow{
+  width:40px;height:80px;
+}
+
+.black-box-arrow-right{
+width:0;height:0;border-top: 40px solid transparent;border-bottom: 40px solid transparent;border-left: 40px solid black;
+}
+
+.pre-countdown{
+    display:flex;justify-content:space-evenly;align-items:left;
+}
+.pre-countdown .faltam{
+    margin-right:10px;
+}
+
+
+
+.countdown{
+    background-image:url(/arquivos/countdown1.jpg);background-repeat:repeat-x;min-width:472px;height:80px;display:flex;justify-content:flex-start;font-size:6em;align-items:center;padding-top:4px;
+}
+
+.countdown .dias{display:flex;margin-right:20px;}
+.countdown .dias .dias-1{text-align:center;width:52px;}
+.countdown .dias .dias-2{text-align:center;width:52px;}
+
+.countdown .horas{ display:flex;margin-right:16px; }
+.countdown .horas .horas-1{text-align:center;width:52px;}
+.countdown .horas .horas-2{text-align:center;width:52px;}
+
+.countdown .minutos {display:flex;margin-right:18px;}
+.countdown .minutos .minutos-1{text-align:center;width:52px;}
+.countdown .minutos .minutos-2{text-align:center;width:52px;}
+
+.countdown .segundos { display:flex; }
+
+.countdown .segundos .segundos-1{ text-align:center;width:52px; }
+.countdown .segundos .segundos-2{ text-align:center;width:52px; }
+
+.countdown-desc{ display:flex;justify-content:space-between;color:#fff;margin-top:10px;font-size:1.4em; }
+.countdown-desc .dias{ width:20%;text-align:right; }
+.countdown-desc .horas{width:26%;text-align:right;}
+.countdown-desc .minutos{width:26%;text-align:right;}
+.countdown-desc .segundos{width:26%;text-align:right;}
+        </style>
+
+        <div id="mainContent">
+
+            <div class="blackFriday">
+                <div style="display:flex;justify-content:space-evenly;min-width:1100px;align-items:center;margin:0 auto;">
+
+                <section class="header-title">
+
+                    <img src="/arquivos/titulo-bf-site.png" title="Super Black Friday Belair" alt="Super Black Friday Belair" width="525" height="100" />
+
+                </section>
+
+                <section class="blackFriday-Countdown">
+
+                    <div class="pre-countdown">
+
+                        <div class="faltam"><img src="/arquivos/faltam.png" /></div>
+
+                            <div class="countdown" style="">
+
+                                <div class="dias">
+                                    <div class="dias-1" style="text-align:center;width:52px;"></div>
+                                    <div class="dias-2" style="text-align:center;width:52px;"></div>
+                                </div>
+
+                                <div class="horas">
+                                    <div class="horas-1" style="text-align:center;width:52px;"></div>
+                                    <div class="horas-2" style="text-align:center;width:52px;"></div>
+                                </div>
+
+                                <div class="minutos" style="">
+                                    <div class="minutos-1" style="text-align:center;width:52px;"></div>
+                                    <div class="minutos-2" style="text-align:center;width:52px;"></div>
+                                </div>
+
+                                <div class="segundos" style="display:flex;">
+                                    <div class="segundos-1" style="text-align:center;width:52px;"></div>
+                                    <div class="segundos-2" style="text-align:center;width:52px;"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="countdown-desc">
+                        <div class="dias">DIAS</div>
+                        <div class="horas">HORAS</div>
+                        <div class="minutos">MINUTOS</div>
+                        <div class="segundos">SEGUNDOS</div>
+                    </div>
+
+
+                </section>
+
+                </div>
+            </div>
+
+            <section class="newsletterBlackFriday" >
+
+                <div style="display:flex;justify-content:space-evenly;width:1100px;align-items:center;margin:0 auto;" id="newsletterBlackFriday">
+                    <div class="text">
+                        <img src="/arquivos/cadastre-se-newsletter.png" width="305" height="42" />
+                    </div>
+                    <div>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" class="newsNome" />
+                        <input type="text" id="email" name="email" placeholder="E-mail" class="newsEmail" />
+                    </div>
+                    <div>
+                        <img src="/arquivos/btn-cadastre-se.png" width="143" height="41" id="btnBF" style="cursor:pointer;" />
+                    </div>
+
+                </div>
+                <div style="text-align:center;font-size:1.4em;width:100%;" id="message"></div>
+            </section>
+
+            <div class="wrp">
+                <div class="title"> <img src="/arquivos/titulo-desejados.png" /> </div>
+                <section class="boxOne">
+                    <div class="oferta black-box">
+                        <div class="black-box-text">
+
+                        <h4>Sofás - Black Friday</h4>
+                        <p>Aqui você encontra os melhores preços de sofás na Black Friday!
+                        Aproveite a promoção e invista em qualidade para deixar a sua casa ainda mais bonita: confira nossos produtos!</p>
+
+                        </div>
+
+                        <div class="black-box-arrow">
+
+                        <div class="black-box-arrow-right"></div>
+
+                        </div>
+                    </div>
+                    <div class="oferta" data-box="box1">
+                        <vtex:contentPlaceHolder id="01-SubCategoria-Imagem" class="img" />
+                        <div class="box-info">
+                            <vtex:contentPlaceHolder id="01-SubCategoria-Texto" class="desc" />
+                        </div>
+                    </div>
+                    <div class="oferta" data-box="box2">
+                        <vtex:contentPlaceHolder id="02-SubCategoria-Imagem" class="img" />
+                        <div class="box-info">
+                            <vtex:contentPlaceHolder id="02-SubCategoria-Texto" class="desc" />
+                        </div>
+                    </div>
+                    <div class="oferta" data-box="box3">
+                        <vtex:contentPlaceHolder id="03-SubCategoria-Imagem" class="img" />
+                        <div class="box-info">
+                            <vtex:contentPlaceHolder id="03-SubCategoria-Texto" class="desc" />
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="wrp text-seo-full">
+                <div>
+                    <vtex:contentPlaceHolder id="Seo2" />
+                </div>
+            </div>
+
+            <div class="wrp">
+                <div class="title"> <img src="/arquivos/titulo-precisa.png" /> </div>
+                <section class="boxOne">
+                    <div class="oferta">
+                        <vtex:contentPlaceHolder id="04-SubCategoria-Imagem" />
+                        <div class="categoria">
+                            <vtex:contentPlaceHolder id="04-SubCategoria-Texto" />
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <vtex:contentPlaceHolder id="05-SubCategoria-Imagem" />
+                        <div class="categoria">
+                            <vtex:contentPlaceHolder id="05-SubCategoria-Texto" />
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <vtex:contentPlaceHolder id="06-SubCategoria-Imagem" />
+                        <div class="categoria">
+                            <vtex:contentPlaceHolder id="06-SubCategoria-Texto" />
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <vtex:contentPlaceHolder id="07-SubCategoria-Imagem" />
+                        <div class="categoria">
+                            <vtex:contentPlaceHolder id="07-SubCategoria-Texto" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="wrp text-seo-full">
+                <div>
+                    <vtex:contentPlaceHolder id="Seo3" />
+                </div>
+            </div>
+
+
+        </div><!-- /mainContent-->
+
+
+        <vtex:template id="footer" />
+    </div><!--/all-->
+
+    <vtex:template id="commonBottom" />
+    <script src="/arquivos/headerMenuPersistente.js"></script>
+    <script src="/arquivos/black-friday-newsletter-mob.js"></script>
+    <script src="/arquivos/countdown-bf.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".oferta .box-info").on('click', function(){
+                var url = $(this).parent().find('.box-banner a').attr('href');
+                if(url){
+                    window.location.href=url;
+                }
+            })
+
+            $(".oferta .categoria").on('click', function(){
+                var url = $(this).parent().find('.box-banner a').attr('href');
+                if(url){
+                    window.location.href=url;
+                }
+            })
+
+            $(".oferta").on('mouseenter', function(event){
+                var id = "#"+$(this).data('box');
+                $(".black-box-text").html($(id).html())
+            })
+
+        });
+    </script>
+    <script>
+
+        WebFontConfig = {
+            google: { families: [ 'Lato:300i,400,400i,700' ] }
+        };
+
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+
+    </script>
+
+</body>
+</html>

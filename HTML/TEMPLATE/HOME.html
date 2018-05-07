@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+
+    <!--meta name="google-site-verification" content="8fgVoqfVjaWhtwKetAzHmLUh3lLFHOS-68vaIY9v5dc" /-->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <vtex:template id="commonHead" />
+    <meta name="google-site-verification" content="EnOTppGyL9pZ7tTd1YMHfcKkiL_EtZSm1Dii-8cc8b4" />
+    <link rel="stylesheet" href="/arquivos/skuVariacaoHome.css" />
+</head>
+
+<body>
+    <div class="all">
+        <h1 class="seoStoreName">Belair</h1>
+
+        <vtex:template id="header" />
+
+        <section class="mainGallery fullGallery">
+            <vtex:contentPlaceHolder id="banner tv" />
+        </section>
+
+        <div id="mainContent">
+
+            <div class="wrapper">
+                <section class="featuredProducts">
+                    <div class="shelfCarousel">
+                        <vtex:contentPlaceHolder id="Novidades" />
+                    </div>
+                </section>
+            </div>
+
+            <!---->
+            <div class="ourCollectionsNew">
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Rack" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Todas" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Salas" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Quartos" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Sofás" /></div>
+                <div class="box"><vtex:contentPlaceHolder id="Banner Coleção Planejados" /></div>
+            </div>
+            <!---->
+
+            <div class="wrapper">
+
+                <section class="loveProducts">
+                    <div class="loveProducts__b">
+                        <vtex:contentPlaceHolder id="loveProductsBannerSingle" />
+                    </div>
+                    <div class="loveProducts__bannertv">
+                        <vtex:contentPlaceHolder id="loveProductsShelf" />
+                    </div>
+                </section>
+
+            </div><!-- /wrapper -->
+        </div><!-- /mainContent-->
+
+
+        <vtex:template id="footer" />
+
+    </div><!--/all-->
+
+    <vtex:template id="commonBottom" />
+    <script src="/arquivos/sku6.1.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <vtex:metaTags/>
+        <vtex:template id="mobile-commonHead" />   
+        <link href="/arquivos/faleconosco.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>  
+        <div class="all">
+            <vtex:template id="mobile-header" />
+            <div id="mainContent">
+                <div class="wrapper">
+                    <h2 class="pageSubTitle" style="padding: 10px 0;"><vtex:contentPlaceHolder id="subtitle página" /></h2>
+                    <div class="topName">
+                        <h1 class="pageTitle"><a class='icon-arrow3' href="/atendimento"></a><vtex:contentPlaceHolder id="Titulo página" /></h1>
+                    </div>
+                    <p>
+                        Para dúvidas, sugestões, reclamações ou elogios,
+                        entre em contato conosco pela nossa central de atendimento.
+                        Teremos o maior prazer em atendê-lo!
+                    </p>
+                    <h3 class="subTitle">POR TELEFONE</h3>
+                    <div class="box-info">
+                        <a href="tel:21 3408-9300" class="box-info-phone">
+                            <span class="phone">(21) 3408-9300</span>
+                            <span class="end"> Segunda a Sexta das 9 às 18h</span>
+                        </a>
+                    </div>
+                    <h3 class="subTitle">ENVIE SUA MENSAGEM</h3>
+                    <vtex.cmc:faleConosco />
+                </div>
+            </div>
+            <vtex:template id="mobile-footer" />
+        </div><!-- all -->
+        <vtex:template id="mobile-commonBottom" />
+    </body>
+</html>

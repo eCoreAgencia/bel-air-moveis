@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <vtex:metaTags/>  
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <vtex:template id="commonHead-black-friday-2017" />
+    <link href="/arquivos/faleconosco.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+    <link rel="stylesheet" href="/arquivos/home-com-variacao-sku.css" />
+</head>
+<body>
+    <div class="all">
+        <vtex:template id="Header-persistente-BF" />
+        <div id="mainContent">
+            <div class="wrapper">
+                <section class="mainSection">
+                    <h2 class="titulo-sessao">Central de Atendimento</h2>
+                    <!-- NAVEGAÇÃO LATERAL -->
+                    <aside class="navSidebar">
+                        <nav class="institutionalLinks">
+                            <h4 class="institutionalLinksTitle">Dúvidas</h4>
+                            <ul class="institutionalLinksList">
+                                <li><a href="/institucional/garantia">Garantia</a></li>
+                                <li><a href="/institucional/entrega-montagem">Entrega e Montagem</a></li>
+                                <li><a href="/institucional/troca-devolucao">Trocas e devoluções</a></li>
+                                <li><a href="/institucional/assistencia-tecnica">Assistencia técnica</a></li>
+                                <li><a href="/institucional/contrato-consumidor">Contatro ao Consumidor</a></li>
+                                <li><a href="/institucional/politica-privacidade">Politica de Privacidade</a></li>
+                            </ul>
+
+                            <h4 class="institutionalLinksTitle">Atendimento</h4>
+                            <ul class="institutionalLinksList">
+                                
+                                <li><a href="/Account/Orders">Meus pedidos</a></li>
+                                <li><a href="/Account">Minha conta</a></li>
+                            </ul>
+
+                            <h4 class="institutionalLinksTitle">Institucional</h4>
+                            <ul class="institutionalLinksList">
+                                <li><a href="/institucional/quem-somos">Quem somos</a></li>
+                                <li><a href="/institucional/lojas">Lojas</a></li>
+                                <li><a href="/institucional/fale-conosco">Fale conosco</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <!-- CONTEUDO -->
+                    <section class="pageContent">
+                        <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
+                        <h2>Fale Conosco</h2>  
+                        <p>Para dúvidas, sugestões, reclamações ou elogios, entre em contato conosco pela nossa central de atendimento.<br/>Teremos o maior prazer em atendê-lo!</p>
+                        <div class="telefone">
+                          <span class="icon-phone"></span>
+                          <div class="box-telefone">      
+                            <div>
+                              <h3>Por telefone</h3>
+                              <span class="destaque">(21) 3408-9300</span>
+                              <p>Segunda à Sexta das 9h às 18h</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="email">
+                          <span class="icon-letter2"></span>
+                          <div class="box-email">      
+                            <h3>Envie sua mensagem</h3>
+                            <p>Preencha o formulário abaixo e entre em contato conosco. Em breve iremos respondê-lo (a).</p>
+                          </div>
+                        </div>
+                         <vtex.cmc:faleConosco />
+                    </section>
+                </section>
+                <section class="shelf shelfCarousel ">
+                    <div class="section-title">
+                      <img src="/arquivos/BF_queridinhos-da-black-friday.png?v=636468709952770000" />
+                      <a href="/busca/?fq=H:287">Ver todos</a>
+                    </div>
+                    <vtex.cmc:BFinstitutionalShelf />
+                </section>
+    		</div><!-- /wrapper -->
+        </div><!-- /mainContent-->
+        <vtex:template id="footer" />
+    </div><!--/all-->
+    <vtex:template id="commonBottom-black-friday-2017" />
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".shelf").each(function() {
+                $(this).find("ul").slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+        });
+    </script>
+</body>
+</html>

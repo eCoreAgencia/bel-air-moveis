@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <vtex:metaTags/>
+
+    <vtex:template id="mobile-commonHead" />
+    <style>
+        #mainContent .section-title{
+            background: #F2FF41;
+            padding: 30px 0 20px;
+        }
+        #mainContent .featuredProducts{
+            margin-top: 0;
+        }
+        #mainContent .featuredBanners{
+            padding: 0 5% 15px;
+        }
+        #mainContent .productList h2{
+            display: none;
+        }
+        #mainContent .section-title{
+            text-align: center;
+        }
+        #mainContent .section-title a{
+            clear: both;
+            color: #FF000E;
+            margin: 15px 0;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 12px;
+            text-align: center;
+            padding: 15px 15px;
+            border-radius: 10px;
+            display: inline-block;
+            text-transform: uppercase;
+            border: 2px solid #FF000E;
+            text-decoration: underline;
+        }
+        #mainContent .section-title a:after{
+            height: 0;
+            content: "";
+            clear: both;
+            display: block;
+            overflow: hidden;
+        }
+        #mainContent .featuredBanners .slick-dots button{
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border: 1px solid #cccccc;
+        }
+        #mainContent .featuredBanners .slick-dots li.slick-active button{
+            background-color: #ccc;
+        }
+        #mainContent .featuredBanners .slick-track{
+            overflow: hidden;
+        }
+        #mainContent .featuredBanners .slick-slide{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="home">
+    <div class="all">
+        <vtex:template id="mobile-header" />
+        
+        <div id="mainContent">
+            <section class="mainGallery">
+                <vtex:contentPlaceHolder id="banner tv" />
+            </section><!-- /mainGallery -->
+
+            <section class="diferenciais">
+                <ul>
+                    <li class="entrega">
+                        <i class="icon-truck"></i>
+                        <p><a href="/institucional/entrega-montagem">Entrega e Montagem grátis no Rio e Grande Rio*</a></p>
+                    </li>
+                    <li class="xentrega">
+                        <i class="icon-card"></i>
+                        <p>Pague em Até 10x sem juros no cartão</p>
+                    </li>
+                </ul>
+            </section><!-- /diferenciais -->
+
+            <section class="featuredProducts shelfCarousel">
+                <div class="section-title">
+                    <vtex:contentPlaceHolder id="bf-shelf-1-Title" />
+                </div>
+                <vtex:contentPlaceHolder id="bf-shelf-1" />
+            </section><!-- /featuredProducts -->
+
+            <section class="featuredBanners ourCollectionsNew">
+                <vtex:contentPlaceHolder id="categorias-slider"/>
+            </section><!-- /ourCollectionsNew -->
+
+            <section class="loveProducts shelfCarousel">
+                <div class="loved-products-banner">
+                    <div class="section-title">
+                        <vtex:contentPlaceHolder id="bf-shelf-3-Title" />
+                    </div>
+                    <vtex:contentPlaceHolder id="bf-shelf-3" />
+                </div>
+                <div class="loved-products-shelf">
+                    <div class="section-title">
+                        <vtex:contentPlaceHolder id="bf-shelf-5-Title" />
+                    </div>
+                    <vtex:contentPlaceHolder id="bf-shelf-5" />
+                </div>
+            </section><!-- /loveProducts -->
+        </div>
+
+        <vtex:template id="mobile-footer" />
+    </div><!-- all -->
+
+    <vtex:template id="mobile-commonBottom" />
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $(".featuredBanners").each(function() {
+                $(this).find("ul").slick({
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+            $(".loveProducts ul").each(function(){
+                $(this).slick({
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    pauseOnHover: false,
+                    autoplay: false,
+                    autoplaySpeed: 4000
+                });
+            });
+        });
+    </script>
+</body>
+</html>

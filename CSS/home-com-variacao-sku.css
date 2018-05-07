@@ -1,0 +1,262 @@
+.ProductSkuVariacoes .prev-arrow {
+  left: 0px;
+  top: 310px;
+  z-index: 1;
+  width: 20px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+}
+.ProductSkuVariacoes .next-arrow {
+  right: 0px;
+  z-index: 1;
+  top: 310px;
+  width: 20px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+}
+.ProductSkuVariacoes .produto-cor {
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  width: 170px;
+  height: 45px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ProductSkuVariacoes .produto-cor .quadrado {
+  height: 35px;
+  padding: 4px;
+  max-width: 35px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.ProductSkuVariacoes .produto-cor .quadrado img{
+   width: 100%;
+   height: auto;
+}
+
+.ProductSkuVariacoes .prev-arrow {
+  left: 0px;
+  top: 333px;
+  width: 20px;
+}
+.ProductSkuVariacoes .next-arrow {
+  right: 0px;
+  top: 333px;
+  width: 20px;
+}
+.produto-cor {
+  top: 325px;
+  left: 0px;
+  width: 340px;
+}
+
+.produto-cor .quadrado {
+  margin-right: 22px;
+}
+
+.ProductSkuVariacoes .prev-arrow {
+  left: 0px;
+  top: 370px;
+  width: 20px;
+}
+
+.ProductSkuVariacoes .next-arrow {
+  right: 0px;
+  top: 370px;
+  width: 20px;
+}
+
+.ProductSkuVariacoes .produto-cor {
+  left: 10px;
+  top: 360px;
+  width: 170px;
+  height: 45px;
+}
+
+.ProductSkuVariacoes .produto-cor .quadrado {
+  height: 35px;
+  padding: 4px;
+  max-width: 35px;
+  margin-right: 7px;
+  margin-bottom: 30px;
+}
+.shelf ul {
+  display:flex; flex-wrap:wrap;
+}
+
+.shelf ul > li{
+  min-height:510px;
+  justify-content: space-between;
+}
+
+.shelf li .ProductSkuVariacoes{
+  margin-top:50px;
+}
+
+.shelfOverlay{
+  display:none !important
+}
+
+
+.maisVendidos .ProductSkuVariacoes .prev-arrow {
+  left: 0px;
+  top: 308px;
+  width: 20px;
+}
+
+.maisVendidos .ProductSkuVariacoes .next-arrow {
+  right: 0px;
+  top: 308px;
+  width: 20px;
+}
+
+.maisVendidos .ProductSkuVariacoes .produto-cor {
+  left: 10px;
+  top: 300px;
+  width: 170px;
+  height: 45px;
+}
+
+.maisVendidos .exclusivo-site{
+	top:260px !important;
+  right:50px !important;
+}
+
+.shelf ul {
+  display:flex; flex-wrap:wrap;
+}
+
+.shelf ul li{
+  min-height:510px;
+  justify-content: space-between;
+}
+
+.shelf li .ProductSkuVariacoes{
+    margin-top:50px;
+}
+.shelfCarousel ul li {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.shelfCarousel ul {
+ width: auto !important
+}
+
+.messageNewsletterHeader{
+    text-align:right;font-size:1.1em;padding-right:10px;
+}
+.newsletterBoxTop{
+  background-color:#F2DE13;
+  padding:20px;
+}
+.newsletter-title{
+  position: relative;
+  padding-left: 60px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight:bold;
+  width: 100%;
+  padding-top:4px;
+}
+.newsletter-title span{
+  display:block;
+  font-size:0.875em;
+  font-weight:normal;
+  text-transform:none;
+}
+h3.newsletter-title:before{
+  content: "\e908";
+  font-family: "icomoon";
+  display: block;
+  color: #000;
+  font-size: 1.875rem;
+  font-weight:normal;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.formNewsletterTop{
+  display:flex;
+  justify-content:space-between;
+}
+
+.formNewsletterTop .infoNewsTop{
+  width:50%;
+}
+
+.formContentTop{
+  width:80%;
+  display:flex;
+  justify-content:space-between;
+}
+
+.fieldClientNameTop label{
+  visibility:hidden;
+  display:none;
+}
+
+.fieldClientEmailTop label{
+  visibility:hidden;
+  display:none;
+  width:0px !important;
+}
+
+.fieldClientNameTop{ min-width:250px !important;margin-right:10px; }
+.fieldClientEmailTop { min-width:290px !important;margin-right:20px; }
+
+.newsClientNameTop, .newsClientEmailTop{
+  padding:10px;
+}
+
+.newsClientNameTop{ min-width:250px !important;}
+.newsClientEmailTop{ min-width:290px !important;}
+
+
+.newsButtonOK{
+  background:#00536E;
+  color:#fff;
+  padding:9px;
+  border:none;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+/*
+.headerNormal{
+    margin-top:-164px !important;
+}
+.headerPersistente{
+    position:fixed!important;
+    z-index:100000;
+    width:100%;
+    background:#fff;
+    display:none;box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);
+}
+
+.headerPersistente .isHome{margin-top:-164px;}
+.headerPersistente .noHome{margin-top:-205px;}*/
+
+.mainGallery{
+box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);
+}
+
+#newsFooter{
+  display:none !important;
+  border:1px solid #fff;
+  padding:20px;
+}

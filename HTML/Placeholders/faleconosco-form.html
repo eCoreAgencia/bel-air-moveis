@@ -1,0 +1,41 @@
+<form id="contact" action="" method="post">
+  <input type="text" name="errorMessage" style="display: none;font-size: 12px;font-weight: 700;text-transform: uppercase;margin-bottom: 10px;padding-bottom: 5px;border: 0;border-bottom: 1px solid #ad0000;" readonly/>        
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="nome">Nome:*</label>
+    <input type="text" class="" name="nome" id="nome" validate="" >
+  </fieldset>
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="sobrenome">Sobrenome:*</label>
+    <input type="text" class="" name="sobrenome" id="sobrenome" validate="" >
+  </fieldset>
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="email">Email:*</label>
+    <input type="text" class="" name="email" id="email" validate="" >
+  </fieldset>
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="telefone">Telefone de contato:*</label>
+    <input type="text" class="" name="telefone" id="telefone" validate="">
+  </fieldset>  
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="celular">Celular:</label>
+    <input type="text" class="" name="celular" id="celular">
+  </fieldset> 
+  <fieldset class="input col-xs-12 col-sm-6 col-md-4">
+    <label for="solicitacao">Solicitação*</label>
+    <select name="solicitacao" validate="" >
+        <option value=""></option>
+        <option value="elogio">Elogio</option>
+        <option value="sugestão">Sugestão</option>
+        <option value="reclamação">Reclamação</option>
+        <option value="dúvida">Dúvida</option>
+    </select>
+  </fieldset>
+  <fieldset class="mensagem col-xs-12">
+    <label for="mensagem">Mensagem*</label>
+    <textarea name="mensagem" validate="" ></textarea>
+  </fieldset>
+  <input type="submit" name="enviar" value="Enviar">
+</form>
+<script type="text/javascript">
+  function ContactForm(){this.validateForm=function(e,t){var n=!0,a=new Object;$(e).each(function(){"email"==this.type?null==this.value.match(/^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$/)?($(this).addClass("error-input"),n&&(n=!1)):a[this.name]=this.value:"celular"!=this.name&&(""==this.value||null==this.value)?($(this).addClass("error-input"),n&&(n=!1)):a[this.name]=this.value}),n?t.success(a):t.error(a)},this.send=function(e,t,n){$.ajax({headers:{Accept:"application/vnd.vtex.ds.v10+json","Content-Type":"application/json"},data:JSON.stringify(e),type:"PATCH",url:t,async:!1,success:function(e){try{n.success(e)}catch(t){}},error:function(e){try{n.error(e)}catch(t){}}})}}$("form#contact").replaceWith($("form#contact").clone()),$("form#contact").each(function(){var e=this,t=new ContactForm,n=$(this).find('input:not([type="submit"],[name="errorMessage"]),select,textarea');$(this).on("submit",function(a){a.preventDefault(),t.validateForm(n,{success:function(n){$(e).find('input[name="errorMessage"]').fadeOut(),$(e).find(".error-input").removeClass("error-input"),t.send(n,"/belairmoveis/dataentities/FL/documents/",{success:function(t){alert("Mensagem Enviada com Sucesso!"),e.reset()},error:function(e){alert("Occorreu um erro ao enviar sua mensagem! Por favor, tente novamente!")}})},error:function(){$(e).find('input[name="errorMessage"]').each(function(){$(this).val("OS CAMPOS COM ASTERISCO SÃO OBRIGATÓRIOS"),$(this).fadeIn()})}})})});
+</script>

@@ -1,0 +1,385 @@
+
+
+
+/****** Estilos Gerais ******/
+	body.belair-bf-2017 #mainContent {
+		margin: 0 auto;
+		background: url(/arquivos/granulado-2.png?v=636447121487400000) repeat scroll 0 0 #000;
+	}
+	
+	body.home.belair-bf-2017 #mainContent {
+		padding: 160px 0 0;
+	}
+
+	body.home.belair-bf-2017 #mainContent .wrapper {
+		padding: 30px;
+	}
+
+	body.belair-bf-2017 #mainContent .wrapper {
+		background-color: #fff;
+		-webkit-border-top-left-radius: 30px;
+		-webkit-border-top-right-radius: 30px;
+		-moz-border-radius-topleft: 30px;
+		-moz-border-radius-topright: 30px;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+
+/****** Estilos Gerais ******/
+
+
+
+/****** Estilos da Home ******/
+	
+	body.home.belair-bf-2017 .bf-shelf-1 {
+		margin-top: -90px;
+	}
+
+	body.home.belair-bf-2017 .shelfCarousel {
+		padding: 30px;
+		overflow: hidden;
+		margin-bottom: 30px;
+		border-radius: 30px;
+		background-color: #fff;
+		-webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+		box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+	}
+
+	body.home.belair-bf-2017 .shelfCarousel:last-of-type {
+		margin-bottom: 0;
+	}
+
+/****** Estilos da Home ******/
+
+
+
+/****** Estilos de Produto ******/
+	
+	body.product.belair-bf-2017 .footer {
+		margin-top: 0;
+	}
+
+	body.product.belair-bf-2017 #mainContent,
+	body.product.belair-bf-2017 #mainContent .wrapper {
+		padding-top: 30px;
+	}
+
+	body.product.belair-bf-2017 .mainProductImage #include {
+ 		width: 500px;
+ 		overflow: hidden;
+ 	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .plus:before,
+ 	body.product.belair-bf-2017 #BuyTogether table .equal:before {
+ 		background-color: #fe0000;
+ 	}
+
+ 	body.product.belair-bf-2017 .trustvoxContainer h3 {
+ 		padding-left: 30px;
+ 	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .itemA .best-price,
+ 	body.product.belair-bf-2017 #BuyTogether table .itemB .best-price {
+ 		color: #ff0202;
+ 		font-weight: bold;
+ 	}
+
+	body.product.belair-bf-2017 #BuyTogether select{
+		cursor: pointer;
+		background: #fff;
+	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .itemA,
+ 	body.product.belair-bf-2017 #BuyTogether table .itemB,
+ 	body.product.belair-bf-2017 #BuyTogether table .buy {
+ 		width: 29%;
+ 	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .buy .parcela {
+ 		font-size: 20px;
+ 		font-style: normal;
+ 	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .buy .total {
+		font-size: 26px;
+	}
+
+ 	body.product.belair-bf-2017 #BuyTogether table .buy .total {
+ 		font-size: 36px;
+ 	}
+
+	body.product.belair-bf-2017 #BuyTogether,
+	body.product.belair-bf-2017 .mainProduct {
+		padding: 40px 30px;
+		margin: 0 30px 30px;
+		border-radius: 30px;
+		-webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+		box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+	}
+
+	body.product.belair-bf-2017 .productDetails{
+		margin: 0 30px 30px;
+	}
+
+	body.product.belair-bf-2017 .rating-click-here,
+	body.product.belair-bf-2017 .price-installments {
+		color: #ff0202;
+	}
+
+	body.product.belair-bf-2017 .price-installments:after {
+		color: #000;
+	}
+
+	body.product.belair-bf-2017 .prodQtd,
+	body.product.belair-bf-2017 .buyProductButton .buy-button{
+		display: inline-block;
+	}
+
+	body.product.belair-bf-2017 .prodQtd .addItem,
+	body.product.belair-bf-2017 .prodQtd .removeItem {
+		color: #fff;
+		background-color: #000;
+	}
+
+	body.product.belair-bf-2017 .chooseProduct {
+		border-top: 1px dashed #ff0202;
+		border-bottom: 1px dashed #ff0202;
+	}
+
+	body.product.belair-bf-2017 .productDetails {
+		color: #fff;
+		background-color: #000;
+	}
+
+	body.product.belair-bf-2017 .productDetails ul.tabs {
+		background-color: #fff;
+	}
+
+	body.product.belair-bf-2017 .productDetails ul.tabs li {
+		color: #fff;
+		font-size: 18px;
+		cursor: pointer;
+		margin-right: 5px;
+		padding: 15px 30px;
+		text-align: center;
+		vertical-align: top;
+		display: inline-block;
+		background-color: #454545;
+		text-transform: uppercase;
+		border-top: 3px solid #454545;
+	}
+
+	body.product.belair-bf-2017 .productDetails ul.tabs li:hover,
+	body.product.belair-bf-2017 .productDetails ul.tabs li.active {
+		background-color: #000;
+		border-top: 3px solid #FE0000;
+	}
+
+	body.product.belair-bf-2017 .tab-pgto,
+	body.product.belair-bf-2017 .tab-sobre,
+	body.product.belair-bf-2017 .tab-frete {
+		color: #fff;
+		padding: 30px;
+		display: none;
+	}
+	
+	body.product.belair-bf-2017 .tab-pgto.active,
+	body.product.belair-bf-2017 .tab-sobre.active,
+	body.product.belair-bf-2017 .tab-frete.active {
+		display: block;
+	}
+
+	body.product.belair-bf-2017 .tab-frete .prefixo {
+	    font-size: 0
+	}
+
+	body.product.belair-bf-2017 .tab-frete .header,
+	body.product.belair-bf-2017 .tab-frete .footer,
+	body.product-belair-bf-2017 .tab-frete .quantity,
+	body.product.belair-bf-2017 .tab-frete .shipping-value {
+		display: none !important;
+	}
+
+	body.product.belair-bf-2017 .tab-frete input {
+	    border: 1px solid #ccc;
+	    padding: 10px
+	}
+
+	body.product.belair-bf-2017 .tab-frete .cep-busca {
+	    display: block;
+	    margin-top: 5px
+	}
+
+	body.product.belair-bf-2017 .tab-frete .cep-busca a {
+	    color: #00536e
+	}
+
+	body.product.belair-bf-2017 .tab-frete .freight-btn {
+	    background: #00536e;
+	    color: #fff;
+	    cursor: pointer;
+	    border-radius: 3px;
+	    padding: 7px 15px;
+	    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.4);
+	    font-size: .9375rem;
+	    font-family: "Proxima Nova", sans-serif;
+	    border: none
+	}
+
+	body.product.belair-bf-2017 .tab-frete .freight-values {
+	    margin-top: 20px;
+	    border-top: 1px solid #ccc;
+	    padding-top: 20px;
+	    font-size: .8125rem
+	}
+
+	body.product.belair-bf-2017 .tab-frete .freight-values thead tr th:first-child,
+	body.product.belair-bf-2017 .tab-frete .freight-values thead tr td:first-child,
+	body.product.belair-bf-2017 .tab-frete .freight-values tbody tr th:first-child,
+	body.product.belair-bf-2017 .tab-frete .freight-values tbody tr td:first-child {
+	    display: none
+	}
+
+	body.product.belair-bf-2017 .tab-frete .freight-values th {
+	    text-align: left;
+	    color: #00536e;
+	    font-weight: 700
+	}
+
+	body.product.belair-bf-2017 .tab-frete .freight-values th,
+	body.product.belair-bf-2017 .tab-frete .freight-values td {
+	    padding: 5px 0
+	}
+
+/****** Estilos de Produto ******/
+
+
+
+/****** Estilo Shelf BF 2017 ******/
+
+	body.belair-bf-2017 .shelfCarousel h2 {
+		display: none;
+	}
+
+	body.belair-bf-2017 .prateleira .bt-aproveitar-shelf {
+		color: #f0ff00;
+		display: block;
+		font-size: 14px;
+		max-width: 140px;
+		line-height: 20px;
+		margin: 10px auto;
+		text-align: center;
+		padding: 7px 7px 4px;
+		background-color: #000;
+		text-transform: uppercase;
+	}
+
+	body.belair-bf-2017 .prateleira li {
+		margin: 0 4px;
+		text-align: center;
+		position: relative;
+	}
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes {
+		position: relative;
+	}
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .prev-arrow,
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .next-arrow {
+		top: 10px;
+	}
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .next-arrow {
+		right: 0;
+	}
+
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .produto-cor {
+		top: auto;
+		left: auto;
+		margin: 10px auto;
+		position: inherit;
+	}
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .produto-cor .quadrado {
+		cursor: pointer;
+		margin: 0 5px 0 0;
+	}
+
+	body.belair-bf-2017 .prateleira li .ProductSkuVariacoes .produto-cor .quadrado:last-of-type {
+		margin-right: 0;
+	}
+
+
+	body.belair-bf-2017 .prateleira li .installment,
+	body.belair-bf-2017 .prateleira li .bestPrice {
+		width: 100%;
+		display: block;
+	}
+
+	body.belair-bf-2017 .prateleira li .installment {
+		color: #fe1f22;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	body.belair-bf-2017 .prateleira li .installment .valueInstallment {
+		font-size: 21px;
+	}
+ 
+	body.belair-bf-2017 .prateleira li .bestPrice {
+		color: #000;
+		width: 100%;
+		display: block;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	body.belair-bf-2017 .prateleira li .productName a {
+		color: #000;
+		display: block;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	body.belair-bf-2017 .prateleira li .productImage img {
+		width: 100%;
+		height: auto;
+	}
+
+	body.belair-bf-2017 .shelfCarousel .slick-prev,
+	body.belair-bf-2017 .shelfCarousel .slick-next {
+		top: 50%;
+		width: 30px;
+		color: #000;
+		height: 30px;
+		border-radius: 0;
+		background-color: transparent !important;
+	}
+
+	body.belair-bf-2017 .shelfCarousel .slick-prev:hover,
+	body.belair-bf-2017 .shelfCarousel .slick-next:hover {
+		background-color: #000 !important;
+	}
+
+	body.belair-bf-2017 .shelfCarousel:hover .slick-next:before,
+	body.belair-bf-2017 .shelfCarousel:hover .slick-prev:before {
+		color: #F1FF00;
+		font-size: 14px;
+	}
+
+/****** Estilo Shelf BF 2017 ******/
+
+
+
+
+/****** Estilo Flags ******/
+
+	body.belair-bf-2017 .shelfCarousel .flag {
+		display: none;
+	}
+
+/****** Estilo Flags ******/

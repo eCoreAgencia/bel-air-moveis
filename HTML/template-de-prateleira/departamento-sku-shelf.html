@@ -1,0 +1,86 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+
+<span data-id="$id"></span>
+<div class="wrapFlag">
+	$product.HightLight
+</div>
+
+<div class="productImage">
+	<a title="$escapedName" href="$uri">
+		$product.GetImageTag(30)
+	</a>
+
+	<div class="shelfOverlay">
+		<a href="$uri" title="$escapedName" class="shelfBuy"><p>Comprar</p></a>
+	</div>
+</div>
+<div class="ProductSkuVariacoes">
+	<span class="prev-arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"/></svg>
+					</span>
+					<span class="next-arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/></svg>
+					</span>
+					<section id_produto="$product.Id" class="produto-cor"></section>
+</div>
+<div class="productInfo productInfoDepartament">
+	#if ($product.IsInStock)
+
+		<div class="productPrice">
+		    <a href="$uri" class="trustvox-stars">
+		        <div data-trustvox-product-code="$product.Id"></div>
+		    </a>
+
+	        <a href="$uri">
+		        #if ($product.NumbersOfInstallment > 1)
+		            <span class="installment">
+		                <strong class="numberInstallment">${product.NumbersOfInstallment}<em>x</em></strong> <strong class="valueInstallment">$product.InstallmentValue</strong>
+		            </span>
+		        #end
+		        <span class="bestPrice"><span>$product.BestPrice</span> à vista</span>
+	        </a>
+    	</div>
+	#else
+		<div class="soldOut">
+			<p>Produto esgotado</p>
+		</div>
+	#end
+
+    <p class="productName">
+		<a title="$escapedName" href="$uri">$product.Name</a>
+	</p>
+
+	<div class="sizes" style="display:none;">
+
+        #if ($product.ProductField(19))
+            <div class="largura">
+                <p>Largura:</p>
+                $product.ProductField(19)
+            </div>
+        #end
+        #if ($product.ProductField(18))
+            <div class="altura">
+                <p>Altura:</p>
+                $product.ProductField(18)
+            </div>
+        #end
+        #if ($product.ProductField(20))
+            <div class="profundidade">
+                <p>Profundidade:</p>
+                $product.ProductField(20)
+            </div>
+        #end
+        #if ($product.ProductField(17))
+            <div class="acabamento">
+                <p>Acabamento:</p>
+                $product.ProductField(17)
+            </div>
+        #end
+    </div>
+
+
+</div>

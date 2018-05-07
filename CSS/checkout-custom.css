@@ -1,0 +1,433 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit
+}
+
+@media (min-width: 1200px) {
+    @import "http://fonts.googleapis.com/css?family=Oswald:400,300";
+    .container {
+        width: 1170px
+    }
+    .container-cart,
+    .container-order-form {
+        width: 970px
+    }
+    .masthead {
+        padding: 10px 5px 0
+    }
+    .masthead h3 {
+        font-size: 24.5px;
+        margin: 10px 0
+    }
+    .masthead h1,
+    .masthead h2,
+    .masthead h3 {
+        line-height: 40px
+    }
+    .masthead h1,
+    .masthead h2,
+    .masthead h3,
+    .masthead h4,
+    .masthead h5,
+    .masthead h6 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300
+    }
+    #footerCredits {
+        background-color: #F5F5F5;
+        padding: 60px 10px
+    }
+    #footerCredits img {
+        display: inline-block;
+        margin-bottom: 40px
+    }
+    h1.lead {
+        margin-top: 0
+    }
+    .valor-por {
+        font-size: 36px;
+        margin-top: 4px;
+        display: block;
+        line-height: 140%
+    }
+    .descricao-preco {
+        margin-top: 10px
+    }
+    .buy-button {
+        float: right;
+        width: 30%;
+        font-weight: bold
+    }
+    nav {
+        display: block
+    }
+    .nav {
+        margin-bottom: 20px;
+        margin-left: 0;
+        list-style: none
+    }
+    .nav>li>a {
+        display: block;
+        font-size: 14px
+    }
+    .nav>li>a:hover {
+        text-decoration: none;
+        background-color: #eeeeee
+    }
+    .nav>li>a>img {
+        max-width: none
+    }
+    .nav>.pull-right {
+        float: right
+    }
+    .nav-tabs>li,
+    .nav-pills>li {
+        float: left
+    }
+    .nav-tabs>li>a,
+    .nav-pills>li>a {
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-right: 2px;
+        line-height: 14px
+    }
+    .nav-pills>li>a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px
+    }
+    .product-name .brand-name,
+    .product-name .seller {
+        display: none
+    }
+    .steps-view {
+        width: 422px
+    }
+    .mini-cart {
+        text-shadow: 0 1px 0px #fff;
+        position: relative
+    }
+    .mini-cart .summary-template-holder,
+    .mini-cart h2 {
+        background: #f7f7f7;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top: 1px dotted #eee;
+        padding-top: 8px
+    }
+    .mini-cart .cart-template-holder {
+        background: #fff;
+        border-right: 3px solid #F7F7F7;
+        border-left: 3px solid #F7F7F7
+    }
+    .mini-cart h2 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 4px 6px;
+        text-align: right;
+        color: #aaa;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px
+    }
+    .mini-cart .cart {
+        margin-bottom: 0;
+        padding: 1px 3px 6px 5px
+    }
+    .mini-cart .monetary,
+    .mini-cart .quantity-price {
+        text-align: right;
+        white-space: nowrap
+    }
+    .mini-cart .cart table tbody tr td.quantity-price {
+        float: right;
+        margin-right: 6px
+    }
+    .mini-cart .info {
+        text-align: right;
+        width: 58%
+    }
+    .mini-cart .info,
+    .mini-cart .monetary {
+        padding-top: 6px
+    }
+    .mini-cart .table tfoot td {
+        color: #468847;
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 12px
+    }
+    .mini-cart .product-item {
+        padding-bottom: 6px
+    }
+    .mini-cart .product-item .shipping-date,
+    .mini-cart .product-item .quantity-price {
+        font-size: 11px;
+        padding: 10px 0 4px 0
+    }
+    .mini-cart .totalizers {
+        margin-bottom: 10px
+    }
+    .mini-cart .link-cart {
+        font-size: 11px;
+        margin-top: 5px
+    }
+    .locale {
+        display: none
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        background-color: #2982d4;
+        color: #fff;
+        height: 45px;
+        width: 100%;
+        padding: 0 10px;
+        margin-left: -10px
+    }
+    #header button.back {
+        background-color: transparent;
+        border: none;
+        float: left;
+        margin: 10px;
+        color: #fff;
+        border: 0;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: normal;
+        padding: 0
+    }
+    #header button.back .arrow {
+        width: 17px;
+        height: 23px;
+        background-image: url("/arquivos/playkids-mobile-sprite.png");
+        background-size: 320px auto;
+        background-repeat: no-repeat;
+        background-position: -177px -60px;
+        float: left
+    }
+    #header h1 {
+        float: right;
+        margin: 3px 0 0;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 25px;
+        width: 93px;
+        height: 26px;
+        color: #FFF
+    }
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 0.8125em;
+    color: #00536e
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wrapper::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.right {
+    text-align: right
+}
+
+.pageHeader {
+    padding: 20px 0;
+    background: #00536e;
+    overflow: hidden
+}
+
+.pageHeader .column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    font-size: 0
+}
+
+.pageHeader .column:last-child {
+    margin-right: 0
+}
+
+.pageHeader .logo h1 {
+    margin: 0
+}
+
+.pageHeader .logo h1 a {
+    background: url("/arquivos/belair-logo.jpg") no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    font-size: 0;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto
+}
+
+.pageHeader .safe {
+    background: url("/arquivos/selo-compra-segura.png") no-repeat;
+    height: 46px
+}
+
+.pageHeader .vtexCheckout {
+    background: url("/arquivos/selo-vtex-checkout.png") no-repeat right;
+    height: 50px
+}
+
+.pageFooter {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: #00536e;
+    color: #fff
+}
+
+.pageFooter a {
+    color: #fff
+}
+
+.pageFooter .column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%
+}
+
+.pageFooter .column:last-child {
+    margin-right: 0
+}
+
+.pageFooter .row {
+    margin-left: 0
+}
+
+.pageFooter .row.top {
+    padding: 20px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid white
+}
+
+.pageFooter small {
+    font-size: 0.8125em;
+    line-height: 1.5;
+    text-align: center
+}
+
+.pageFooter .payment {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40%;
+}
+
+.pageFooter .payment:last-child {
+    margin-right: 0
+}
+
+.pageFooter .payment div {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.pageFooter .payment img {
+    display: block
+}
+
+.pageFooter .payment span {
+    font-size: 0.75em;
+    display: block;
+    margin-top: 10px
+}
+
+.pageFooter .credits {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-top: 10px
+}
+
+.pageFooter .credits:last-child {
+    margin-right: 0
+}
+
+.pageFooter .credits a {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px
+}
+
+.pageFooter .credits a span {
+    font-size: 0.75em;
+    display: block;
+    margin-bottom: 5px
+}
+
+.pageFooter .credits a:last-child span {
+    margin-bottom: -5px
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+.btn {
+    background: #3d3d42;
+    color: #fff;
+    border-radius: 3px;
+    padding: 7px 15px;
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.4);
+    font-size: 1.125rem;
+    font-family: "Proxima Nova", sans-serif;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none
+}
+
+.step .text input {
+    height: 35px
+}
+
+.cart-template .Tax .info {
+    font-size: 0
+}
+
+.cart-template .Tax .info:before {
+    content: "Frete";
+    display: inline-block;
+    font-size: 0.8125rem
+}
+
+
+/*# sourceMappingURL=checkout-custom.css.map */
+
+html #go-to-shipping,
+html .btn-go-to-payment,
+html #go-to-payment,
+html #payment-data-submit,
+html .add-service,
+html .btn-place-order-wrapper #cart-to-orderform{
+    background-color: #51a351!important;
+}
