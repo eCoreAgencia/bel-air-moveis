@@ -3,11 +3,11 @@
 
 <head>
     <vtex:metaTags/>
-
+    
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
     <vtex:template id="commonHead" />
     <script type="text/javascript">
         var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
@@ -37,89 +37,97 @@
             padding-bottom: 30px;
         }
 
-        .buyProduct.compra-persistente {
-            right: 0;
-            top: 205px;
-            z-index: 999;
-            padding: 20px;
-            position: fixed;
-            max-width: 400px;
-            background-color: #fff;
-            -webkit-transition:all 0.45s ease-in-out;
-            -moz-transition:all 0.45s ease-in-out;
-            -o-transition:all 0.45s ease-in-out;
-            transition:all 0.45s ease-in-out;
-        }
-        .mainProductInfo .productName {
-            font-size: 21px;
-            font-weight: 600;
-        }
-        .buyProduct.compra-persistente .prodQtd {
-            margin-bottom: 20px;
-        }
+        @media screen and (min-width: 1400px) {
+            .buyProduct.compra-persistente {
+                right: 0;
+                top: 205px;
+                z-index: 999;
+                padding: 20px;
+                position: fixed;
+                max-width: 400px;
+                background-color: #fff;
+                -webkit-transition:all 0.45s ease-in-out;
+                -moz-transition:all 0.45s ease-in-out;
+                -o-transition:all 0.45s ease-in-out;
+                transition:all 0.45s ease-in-out;
+            }
+            .mainProductInfo .productName {
+                font-size: 21px;
+                font-weight: 600;
+            }
+            .buyProduct.compra-persistente .prodQtd {
+                margin-bottom: 20px;
+            }
 
-        .productSpec {
-            padding-bottom: 20px;
-        }
+            .productSpec {
+                padding-bottom: 20px;
+            }
 
-        .buyProduct .close-button-compra-persistente {
-            display: none;
-        }
-        .buyProduct .productName{
-            padding-bottom: 15px;
-            display: none !important;
-        }
-        .buyProduct.compra-persistente .productName{ display: block !important; }
-        .buyProduct.compra-persistente .close-button-compra-persistente:first-of-type {
-            left: 50%;
-            width: 30px;
-            color: #fff;
-            height: 30px;
-            bottom: 435px;
-            display: block;
-            cursor: pointer;
-            font-size: 18px;
-            position: fixed;
-            font-weight: bold;
-            line-height: 27px;
-            margin-left: 350px;
-            border-radius: 50%;
-            text-align: center;
-            background-color: #00536E;
-            z-index: 9999999999999999999;
-        }
-        .buyProduct.compra-persistente .close-button-compra-persistente {
-            margin: 0 !important;
-            top: 0 !important;
-            left: 0 !important;
-            bottom: initial !important;
-            position: absolute !important;
-            transform: translateY(-50%) translateX(-50%);
-        }
-        .buyProduct.compra-persistente.not {
-            left: auto;
-            right: -400px;
-            -webkit-transition-duration: 0.3s;
-            -moz-transition-duration: 0.3s;
-            -o-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-        }
+            .buyProduct .close-button-compra-persistente {
+                display: none;
+            }
+            .buyProduct .productName{
+                padding-bottom: 15px;
+                display: none !important;
+            }
+            .buyProduct.compra-persistente .productName{ display: block !important; }
+            .buyProduct.compra-persistente .close-button-compra-persistente:first-of-type {
+                left: 50%;
+                width: 30px;
+                color: #fff;
+                height: 30px;
+                bottom: 435px;
+                display: block;
+                cursor: pointer;
+                font-size: 18px;
+                position: fixed;
+                font-weight: bold;
+                line-height: 27px;
+                margin-left: 350px;
+                border-radius: 50%;
+                text-align: center;
+                background-color: #00536E;
+                z-index: 9999999999999999999;
+            }
+            .buyProduct.compra-persistente .close-button-compra-persistente {
+                margin: 0 !important;
+                top: 0 !important;
+                left: 0 !important;
+                bottom: initial !important;
+                position: absolute !important;
+                transform: translateY(-50%) translateX(-50%);
+            }
+            .buyProduct.compra-persistente.not {
+                left: auto;
+                right: -400px;
+                -webkit-transition-duration: 0.3s;
+                -moz-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
 
-        .buyProduct.compra-persistente.not .close-button-compra-persistente:first-of-type {
-            left: auto;
-            right: -400px;
-            -webkit-transition-duration: 0.3s;
-            -moz-transition-duration: 0.3s;
-            -o-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-        }
+            .buyProduct.compra-persistente.not .close-button-compra-persistente:first-of-type {
+                left: auto;
+                right: -400px;
+                -webkit-transition-duration: 0.3s;
+                -moz-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
 
-        .buyProduct.compra-persistente {
-            -webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
-            -moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
-            box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+            .buyProduct.compra-persistente {
+                -webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+                box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+            }
         }
+        
+        .paymentInstallmentsRules{ display: none }
+        
     </style>
+    
+    <link href="/arquivos/header-persistente-v1.css" rel="stylesheet" type="text/css" />
+    <style>.headerPersistente{z-index:100000000000 !important;}</style>
 </head>
 
 <body>
@@ -140,14 +148,14 @@
         });
     </script>
     <script type="text/javascript" src="//static.trustvox.com.br/assets/widget.js"></script>
-
+    
     <div class="all">
          <vtex:template id="Header-Persistente-N" />
-
+        
         <div id="mainContent">
             <div class="wrapper">
                 <div class="mainProduct" itemscope="" itemtype="http://schema.org/Product">
-
+                    
                     <section class="mainProductImage">
                         <vtex.cmc:ProductImage/>
                         <div class="flags">
@@ -166,12 +174,12 @@
                         <div class="chooseProduct">
                             <vtex.cmc:skuSelection />
                         </div>
-
+                        
                         <div class="buyProduct">
                             <div class="flagsClone">
                                 <vtex.cmc:hightLight/>
                             </div>
-
+                            
                             <div class="priceProduct">
                                 <vtex.cmc:skuPrice/>
                             </div>
@@ -187,16 +195,17 @@
                                 <vtex.cmc:BuyButton/>
                             </div>
                         </div>
+
                         <div class="paymentInstallmentsRules">
                             <strong>
-                                10% de desconto no boleto
+                                5% de desconto no boleto
                             </strong>
                         </div>
-                        <div class="paymentInstallmentsRules">
+                        <!--<div class="paymentInstallmentsRules">
                             <strong>
                                 De 1x a 6x com desconto de 5%
                             </strong>
-                        </div>
+                        </div -->
 
                         <div class="paymentInfo boxToggle">
                             <p>Opções de parcelamento</p>
@@ -211,35 +220,37 @@
                                 <vtex.cmc:shippingValue/>
                             </div>
                         </div>
-
+                        
                         <div class="info montagem">
                             <p>Entrega e montagem grátis:  Rio e Grande Rio (Exceto produtos de cozinha)</p>
-                        </div>
-
+                        </div>  
+                        
                         <div class="info frete">
                             <p>Para demais localidades consultar nossa <a href="/institucional/entrega-montagem">política de entrega e montagem</a>.</p>
-                        </div>
+                        </div> 
 
                     </section><!-- /mainProductInfo-->
                 </div><!-- /mainProduct -->
 
-                <section class="productDetails">
+                <section class="productDetails">  
                     <h3>Sobre o produto</h3>
                     <vtex.cmc:ProductDescription/>
 
                     <vtex.cmc:productSpecification/>
                 </section><!-- productDescription -->
-
+                
+                <div id="BuyTogether">
+                    <vtex.cmc:BuyTogether/>
+                </div>
+                
                 <div class="trustvoxContainer">
                     <h3 id="trustvox-reviews">Pergunte e veja opiniões de quem já comprou</h3>
                     <div id="_trustvox_widget"></div>
                 </div>
 
-                <div id="BuyTogether">
-                    <vtex.cmc:BuyTogether/>
-                </div>
-
-                <section class="productComplementary">
+                
+                
+                <section class="productComplementary">  
                     <vtex:contentPlaceHolder id="Produtos complementares" />
                 </section><!-- productComplementary -->
             </div><!-- /wrapper -->
@@ -249,12 +260,29 @@
     </div><!--/all-->
 
     <vtex:template id="commonBottomNew" />
-    <script src="/arquivos/desconto-parcelas-1.6.js"></script>
+    
+    <!--<script src="/arquivos/desconto-parcelas-1.6.js"></script>-->
+    
+    <script src="/arquivos/compra-persistente-v3.js"></script>
+    
     <script type="text/javascript">
+        $(function(){
+                
+                
+                
+        });
         $(document).ajaxStop(function(){
             $(document).ready(function(){
                 // $('.productSpec').insertAfter('.buyProduct');
-                $('.buyProduct .priceProduct').before($('.fn.productName').clone());
+                
+                if($('.productSpec').length){
+                    $('.productSpec').slice(1, $('.productSpec').length).remove();
+                }
+                
+                // $('.productSpec').insertAfter('.frete'); 
+                
+                $('.buyProduct').find('.fn.productName').remove();
+                $('.buyProduct .priceProduct').prepend($('.fn.productName').clone());
                 $('.tabs li').click(function(){
                     var myClass = $(this).attr('class');
 
@@ -268,6 +296,9 @@
                 });
                 $('#BuyTogether').each(function(){if($(this).find('table').length == 0) $(this).remove();});
             });
+
+            $('.shipping .productSpec').remove();
+
             $('.mainProductInfo').each(function(){
                 var numChildren = $(this).find('.trustvox-shelf-container').children().length;
                 if(!numChildren){
@@ -275,6 +306,18 @@
                 }
             });
         });
+        
+        $(function(){
+            setTimeout(function(){
+                var textInCash = $(".inCashPrice").text();
+                $(".inCashPrice").text(textInCash.replace('de 1x a 6x no cartão','à vista no boleto'));
+                //var items = [1,2,3,4,5,6,7,8,9,10];
+                //items.map(function(i) { $(".other-payment-method-ul li").eq(i).find('.complement').text("") });
+                
+            },2200);
+        })
     </script>
+
+    <script src="/arquivos/produto-sku-similar.js"></script>
 </body>
 </html>
