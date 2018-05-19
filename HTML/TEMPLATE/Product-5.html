@@ -33,11 +33,8 @@
             padding-bottom: 15px;
             border-bottom: 1px solid gray;
         }
-        .buyProductButton {
-            padding-bottom: 30px;
-        }
 
-        @media screen and (min-width: 1400px) {
+        @media screen and (min-width: 1500px) {
             .buyProduct.compra-persistente {
                 right: 0;
                 top: 205px;
@@ -57,10 +54,6 @@
             }
             .buyProduct.compra-persistente .prodQtd {
                 margin-bottom: 20px;
-            }
-
-            .productSpec {
-                padding-bottom: 20px;
             }
 
             .buyProduct .close-button-compra-persistente {
@@ -119,6 +112,16 @@
                 -webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
                 -moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
                 box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+            }
+
+            .chooseProduct{
+                border-top: none;
+                padding: 10px 0;
+                margin: 10px 0 20px;
+            }
+            
+            .productSpec{
+                padding: 20px 0;
             }
         }
         
@@ -273,7 +276,7 @@
         });
         $(document).ajaxStop(function(){
             $(document).ready(function(){
-                // $('.productSpec').insertAfter('.buyProduct');
+                $('.productSpec').insertAfter('.buyProduct');
                 
                 if($('.productSpec').length){
                     $('.productSpec').slice(1, $('.productSpec').length).remove();
