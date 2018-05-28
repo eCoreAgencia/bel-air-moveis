@@ -4916,7 +4916,12 @@ body.orders .specConds__item .icon-card:before {
 
 /*# sourceMappingURL=style-belair.css.map */
 
-.shelf li .productImage .shelfOverlay .shelfBuy{
+
+.shelf li .shelfBuy {
+    display: none;
+}
+
+body.home .shelf li .productImage .shelfOverlay .shelfBuy{
     width: auto;
     height: auto;
 }
@@ -4928,19 +4933,15 @@ body.orders .specConds__item .icon-card:before {
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.45);
 }
 
-.shelf li .shelfBuy {
-    display: none;
-}
-
-.shelf ul li:hover .shelfBuy{
+body.home .shelf ul li:hover .shelfBuy{
     display: block;
 }
 
-.shelf ul li .shelfBuy:hover p{
+body.home .shelf ul li .shelfBuy:hover p{
     box-shadow: inset 0 -3px rgba(0, 0, 0, 0.3);
 }
 
-.shelf li .shelfBuy p {
+body.home .shelf li .shelfBuy p {
     background: #64c463;
     color: #fff;
     border-radius: 3px;
@@ -4957,7 +4958,7 @@ body.orders .specConds__item .icon-card:before {
     text-align: center;
 }
 
-.shelf li .shelfBuy p:after{
+body.home .shelf li .shelfBuy p:after{
     content: "\e90d";
     font-family: "icomoon";
     display: inline-block;
@@ -4968,6 +4969,15 @@ body.orders .specConds__item .icon-card:before {
     margin-top: 15px;
 }
 
-.shelf ul li{
+body.home .shelf ul li{
     min-height: 420px !important;
+}
+
+.shelf li .productInfo{
+    min-height: 118px;
+}
+
+.shelf ul > li{
+    min-height: auto !important;
+    margin-bottom: 10px;
 }
