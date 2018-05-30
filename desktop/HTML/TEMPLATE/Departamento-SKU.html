@@ -7,17 +7,20 @@
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+    
     <vtex:template id="commonHead" />
     <link href="/arquivos/sku-e-paginacao.css" rel="stylesheet" type="text/css" />
-
+    <style>
+    .shelfOverlay{ display:block !important }
+    </style>
+    
 
 </head>
 
 <body>
 
     <div class="all">
-
+    
         <!--teste431-->
         <vtex:template id="Header-Persistente-N" />
 
@@ -45,8 +48,8 @@
 
                       </div>
 
-                      <vtex.cmc:searchResult layout="ab173738-30fb-49e9-802e-f4583e68c495" itemCount="20" columnCount="20" />
-
+                      <vtex.cmc:searchResult layout="ab173738-30fb-49e9-802e-f4583e68c495" itemCount="18" columnCount="18" />
+                        
                         <div class="pageContent">
                             <section class="shelfCarousel">
                                 <vtex:contentPlaceHolder id="Mais Vendidos" />
@@ -55,17 +58,17 @@
                                 <vtex:contentPlaceHolder id="Baixou o Preço" />
                             </section>
                         </div>
-
+                    
                     </section>
-
+                    
                 </div>
-
-
-
+                
+                
+                
             </div>
-
-
-
+                    
+            
+                    
             <div class="pageContent">
                 <section class="txtContent">
                     <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
@@ -78,9 +81,14 @@
         <vtex:template id="footer" />
     </div><!--/all-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+    <script type="text/javascript" src="/arquivos/produto-similar.min.js"></script>
+    
     <link href="/arquivos/descricao.css" rel="stylesheet" type="text/css" />
+    
     <vtex:template id="commonBottomNew" />
-
-
+    <script src="/arquivos/produto-similar.min.js"></script>
+    
+    
+    
 </body>
 </html>
