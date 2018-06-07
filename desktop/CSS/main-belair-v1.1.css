@@ -1138,7 +1138,8 @@ body {
 
 .footer .newsletterBox .infoNews {
     display: inline-block;
-    float: left
+    float: left;
+    background-color: #F4F1F5
 }
 
 .footer .newsletterBox .infoNews h3 {
@@ -1154,7 +1155,8 @@ body {
 .footer .newsletterBox .formContent {
     position: relative;
     float: right;
-    width: 60%
+    width: 60%;
+    background-color: #F4F1F5
 }
 
 .footer .newsletterBox .formContent fieldset {

@@ -5137,7 +5137,10 @@ body.my-account .myAccountLinks .boxItem.center {
 	}
 	.mainProductInfo .productPrice .descricao-preco em {
 		white-space: nowrap;
-		font-size: 0
+		font-size: 0;
+	}
+	.mainProductInfo .productPrice .descricao-preco em.valor-por {
+		display: none !important;
 	}
 	.mainProductInfo .productPrice .descricao-preco strong {
 		font-size: 28px
@@ -5150,6 +5153,9 @@ body.my-account .myAccountLinks .boxItem.center {
 		font-size: 18px;
 		margin-left: 5px;
 		margin-right: 5px
+	}
+	.inCashPrice{
+		font-size: 14px;
 	}
 	.mainProductInfo .productPrice .valor-por .skuBestPrice:before {
 		content: 'sem juros ou';

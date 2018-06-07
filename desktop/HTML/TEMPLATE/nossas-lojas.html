@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <vtex:template id="commonHead" />
+</head>
+
+<body>
+    <div class="all">
+        <vtex:template id="header" />
+        
+        <div id="mainContent">
+            <div class="wrapper">
+                <h2 class="titulo-sessao">Nossas lojas</h2>
+
+                <!-- NAVEGAÇÃO LATERAL -->
+                <aside class="storeSidebar">
+                    <p>
+                        Localize no mapa a BelAir mais perto de você.
+                    </p>
+
+                    <div class="boxFilterstore">
+                        <form action="">
+                            <fieldset>
+                                <label for="">Selecione a loja</label>
+                                <select name="" id="">
+                                    <option value="">America Shopping</option>
+                                    <option value="">Bangu Shopping</option>
+                                    <option value="">Barra Shopping</option>
+                                </select>
+                                
+                                <label for="">Digite seu endereço</label>
+                                <input type="text" placeholder="Ex.: Av das Américas" />
+                                <input type="submit"/>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="boxFilterstore boxFilterstoreResult">
+                        <img src="" alt="" />
+               
+                        <p class="localStore">Américas Shopping / Recreio dos Bandeirantes</p>
+
+                        <address>
+                            <p>Av. das Américas, 15.5002º piso – lojas 250/251 </p>
+                        </address>
+
+                        <p>Telefones</p>
+                        <a class="numberCell" href="">(21) 2442-9511</a>
+                        <a class="numberCell" href="">(21) 2441-9512</a>
+
+                    </div>
+
+                </aside>
+                
+                <!-- CONTEUDO -->
+                <section class="pageContent">
+                    <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
+                     <vtex:contentPlaceHolder id="conteudo institucional" />
+                </section>
+
+            </div><!-- /wrapper -->
+        </div><!-- /mainContent-->
+
+        <vtex:template id="footer" />
+    </div><!--/all-->
+
+    <vtex:template id="commonBottom" />
+</body>
+</html>

@@ -1,4 +1,7 @@
-$.cookie("newsletter", "ok", { path: '/', expires: 10 });
+// $(document).ready(function() {
+//     $.cookie("newsletter", "ok", { path: '/', expires: 10 });
+//     console.log('v4');
+// });
 
 var fns = {
 	lightboxOverlay:    $('<div class="lightboxOverlay"></div>'),
@@ -259,10 +262,7 @@ var global = {
 
         $(document).ajaxStop(function(){
 
-        	var textResposta = '<h4>Seu email foi cadastrado com sucesso</h4>\
-        						<p>Salve o cÃƒÂ³digo abaixo. Ele serÃƒÂ¡ necessÃƒÂ¡rio para a aplicaÃƒÂ§ÃƒÂ£o do desconto.</p>\
-        						<strong class="cupom">Desc52015</strong></h3> <p>Na pÃƒÂ¡gina de pagamento, digite o cÃƒÂ³digo no campo Ã¢â‚¬Å“cupom de descontoÃ¢â‚¬Â\
-								para receber 5% de desconto na sua primeira compra.</p> <p><em>VÃƒÂ¡lida atÃƒÂ© 31/12/2015</em></p>'
+        	var textResposta = '<h4>Seu email foi cadastrado com sucesso</h4><p>Salve o código abaixo. Ele será necessário para a aplicação do desconto.</p><strong class="cupom">primeiracompra</strong></h3> <p>Na página de pagamento, digite o código no campo <em>cupom de desconto</em>	para receber 5% de desconto na sua primeira compra.</p>';
 
         	$.cookie("newsletter", "ok", { path: '/', expires: 10 });
         	if ($(".newsLightbox fieldset").hasClass('success')) {
@@ -309,7 +309,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> Ãƒ  vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> á  vista</b>');
 		    }
 		});
 	},
@@ -328,7 +328,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> Ãƒ  vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> á  vista</b>');
 		    }
 		});
 	},
@@ -797,7 +797,7 @@ var product = {
         pClubrNumString = pClubrNumString.split(".");
         var p = fns.numberWithCommas(pClubrNumString[0]);
 
-       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' de 1x a 6x no cartÃƒÂ£o</b>');
+       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' de 1x a 6x no cartão</b>');
     },
 
     applyDiscount: function () {
@@ -805,13 +805,15 @@ var product = {
 		// 5 a 6x no cartao = 4% de desconto
 		// 7x a 10x = preÃƒÂ§o do comum
 		function calc (v) {
-	    	for (var i = 1; i <= 10; i++) {
-	    		if (v >= 1 && v < 7) {
-    				return 0.95;
-	    		} else {
-	    			return 1;
-	    		};
-	    	};
+	    	/*for (var i = 1; i <= 10; i++) {
+	    		//if (v >= 1 && v < 7) {
+	    		// if (v >= 1 && v < 2) {
+    			// 	return 0.95;
+	    		// } else {
+	    			//return 1;
+	    		//};
+	    	};*/
+            return 1;
 		}
 
     	$('.other-payment-method-ul .vista').attr('class','other-payment-method-Visa-1');

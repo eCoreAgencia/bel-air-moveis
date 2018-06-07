@@ -1133,12 +1133,14 @@ body {
 }
 
 .footer .newsletterBox>div {
-    display: block !important
+    display: block !important;
+    background-color: #F4F1F5
 }
 
 .footer .newsletterBox .infoNews {
     display: inline-block;
-    float: left
+    float: left;
+    background-color: #F4F1F5
 }
 
 .footer .newsletterBox .infoNews h3 {
@@ -1154,7 +1156,8 @@ body {
 .footer .newsletterBox .formContent {
     position: relative;
     float: right;
-    width: 60%
+    width: 60%;
+    background-color: #F4F1F5
 }
 
 .footer .newsletterBox .formContent fieldset {
@@ -2345,9 +2348,13 @@ body {
     border: 1px solid #e6e6e6;
     padding: 7px
 }
+.newsLightbox2 .infoNews{
+    background-color: #EDEAF0;
+}
 
 .newsLightbox2 .newsletter .formContent {
-    padding: 0px 30px 10px 30px
+    padding: 0px 30px 10px 30px;
+    background-color: #EDEAF0;
 }
 
 .newsLightbox2 .newsletter label {
@@ -4980,4 +4987,13 @@ body.home .shelf ul li{
 .shelf ul > li{
     min-height: auto !important;
     margin-bottom: 10px;
+}
+
+.hello-bar-frete{
+    background-color: #fff;
+}
+
+.hello-bar-frete img{
+    margin: 0 auto;
+    width: 75% !important;
 }
