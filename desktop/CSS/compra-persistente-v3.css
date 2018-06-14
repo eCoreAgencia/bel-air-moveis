@@ -8,7 +8,7 @@ body.compra-persistente-2 {
 
 .compra-persistente-2 .buyProduct.compra-persistente {
     left: 0;
-    bottom: 0;
+    top: 116px;
     width: 100%;
     z-index: 999;
     padding: 5px 0;
@@ -17,10 +17,11 @@ body.compra-persistente-2 {
     text-align: center;
     background-color: #fff;
     border-top: 1px solid #ccc;
-    -webkit-transition:all 0.45s ease-in-out;
-    -moz-transition:all 0.45s ease-in-out;
-    -o-transition:all 0.45s ease-in-out;
-    transition:all 0.45s ease-in-out;
+    -webkit-transition:all 0.1s ease-in-out;
+    -moz-transition:all 0.1s ease-in-out;
+    -o-transition:all 0.1s ease-in-out;
+    transition:all 0.1s ease-in-out;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.176);
 }
 
 .compra-persistente-2 .productSpec,
@@ -42,11 +43,20 @@ body.compra-persistente-2 {
     vertical-align: top;
 }
 
-.compra-persistente-2 .buyProductButton,
+/* .compra-persistente-2 .buyProductButton,
 .compra-persistente-2 .mainProductInfo .priceProduct {
-    width: 50%;
+    width: 31%;
     vertical-align: top;
     display: inline-block;
+} */
+
+.buyProduct.compra-persistente .productName{
+    width: 38%;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .compra-persistente-2 .priceProduct,
@@ -73,6 +83,10 @@ body.compra-persistente-2 .copyright {
     padding-bottom: 0 !important;
 }
 
-body.compra-persistente-2 .flagsClone{
-    display: none
+.compra-persistente-2 .headerPersistente{
+    box-shadow: none;
+}
+
+.compra-persistente-2 .flagsClone{
+    display: none;
 }

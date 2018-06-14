@@ -1132,15 +1132,23 @@ body {
     margin-top: 50px
 }
 
+.newsLightbox2>div {
+    background-color: #F4F1F5;
+}
+
 .footer .newsletterBox>div {
     display: block !important;
-    background-color: #F4F1F5
+    background-color: transparent
+}
+
+.newsLightbox2 .infoNews{
+    background-color: #F4F1F5;
 }
 
 .footer .newsletterBox .infoNews {
     display: inline-block;
     float: left;
-    background-color: #F4F1F5
+    background-color: transparent;
 }
 
 .footer .newsletterBox .infoNews h3 {
@@ -1157,6 +1165,10 @@ body {
     position: relative;
     float: right;
     width: 60%;
+    background-color: transparent;
+}
+
+.newsLightbox2 .formContent{
     background-color: #F4F1F5
 }
 
@@ -4997,3 +5009,94 @@ body.home .shelf ul li{
     margin: 0 auto;
     width: 75% !important;
 }
+
+/* @media screen and (min-width: 1500px) {
+    .buyProduct.compra-persistente {
+        right: 0;
+        top: 205px;
+        z-index: 999;
+        padding: 20px;
+        position: fixed;
+        max-width: 400px;
+        background-color: #fff;
+        -webkit-transition:all 0.45s ease-in-out;
+        -moz-transition:all 0.45s ease-in-out;
+        -o-transition:all 0.45s ease-in-out;
+        transition:all 0.45s ease-in-out;
+    }
+    .mainProductInfo .productName {
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .buyProduct.compra-persistente .prodQtd {
+        margin-bottom: 20px;
+    }
+
+    .buyProduct .close-button-compra-persistente {
+        display: none;
+    }
+    .buyProduct .productName{
+        padding-bottom: 15px;
+        display: none !important;
+    }
+    .buyProduct.compra-persistente .productName{ display: block !important; }
+    .buyProduct.compra-persistente .close-button-compra-persistente:first-of-type {
+        left: 50%;
+        width: 30px;
+        color: #fff;
+        height: 30px;
+        bottom: 435px;
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+        position: fixed;
+        font-weight: bold;
+        line-height: 27px;
+        margin-left: 350px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #00536E;
+        z-index: 9999999999999999999;
+    }
+    .buyProduct.compra-persistente .close-button-compra-persistente {
+        margin: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        bottom: initial !important;
+        position: absolute !important;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .buyProduct.compra-persistente.not {
+        left: auto;
+        right: -400px;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+
+    .buyProduct.compra-persistente.not .close-button-compra-persistente:first-of-type {
+        left: auto;
+        right: -400px;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+
+    .buyProduct.compra-persistente {
+        -webkit-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+        box-shadow: -1px -1px 33px -8px rgba(0,0,0,0.75);
+    }
+
+    .chooseProduct{
+        border-top: none;
+        padding: 10px 0;
+        margin: 10px 0 20px;
+    }
+    
+    .productSpec{
+        padding: 20px 0;
+    }
+} */
