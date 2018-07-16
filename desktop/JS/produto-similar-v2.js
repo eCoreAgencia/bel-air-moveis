@@ -31,7 +31,7 @@ window.onload = function() {
                         })
                     })
                 })
-            }), $(document).ajaxStop(function() {
+            }), $(document).ajaxComplete(function() {
                 $(".productList .quadrado").each(function() {
                     var t = $(this).attr("class"),
                         a = t.split(/\//)[0],

@@ -1,0 +1,62 @@
+.productSpec {
+    border-top: none;
+}
+
+.productSpec p,
+.productSpec h4{
+    display: none;
+}
+
+.productSpec table{
+    width: 100%;
+    background-color: #EEE;
+    padding: 8px 0;
+}
+
+.productSpec table tbody{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.productSpec table tbody tr{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.productSpec table tbody tr th,
+.productSpec table tbody tr td{
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.productSpec table tbody tr th:before{
+    content: "";
+    background: url(/arquivos/medidas.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    width: 45px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.productSpec table tbody tr th.name-field.Altura:before{
+    background-position: -8px -8px;
+    width: 30px;
+}
+
+.productSpec table tbody tr th.name-field.Largura:before{
+    background-position: -80px -10px;
+}
+
+.productSpec table tbody tr th.name-field.Profundidade:before{
+    background-position: -154px -10px;
+}
+
+.mainProductInfo .productSpec{
+    display: none !important;
+}
+
+.productSpec .Caracteristicas{
+    display: none;
+}

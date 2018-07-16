@@ -675,7 +675,6 @@ body {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    background: url("/arquivos/sprite-icons.png") 0 0;
     width: 83px;
     height: 60px;
     margin-right: 10px
@@ -1044,12 +1043,8 @@ body {
     border-bottom: 3px solid #00536e
 }
 
-.pageNav .pageNavMenuDepartamento>li.special {
-    background: #c32033
-}
-
 .pageNav .pageNavMenuDepartamento>li.special>a {
-    color: #fff
+    color: #c32033;
 }
 
 .pageNav .pageNavMenuDepartamento .pageNavMenuSubmenu li>a {
@@ -1831,7 +1826,7 @@ body {
 
 .lightboxOverlay.open {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
 }
 
 #TB_window {
@@ -3205,7 +3200,7 @@ html {
     margin-bottom: 80px
 }
 
-.productDetails h3 {
+.productDetails h4 {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -3215,7 +3210,7 @@ html {
 
 .productDetails div {
     font-family: Arial, sans-serif;
-    color: #999;
+    color: #3d3d42;
     font-size: .8125rem
 }
 
@@ -4195,7 +4190,6 @@ body.institutional.store .coordinates #end .selectStore span:after {
     top: 0;
     width: 20px;
     height: 30px;
-    background: url("/arquivos/sprite-icons.png");
     background-position: -94px -30px
 }
 
@@ -4340,13 +4334,13 @@ body.institutional.store .contentStores .store span {
 }
 
 body.institutional.store #map_canvas {
-    max-width: 100%;
+    max-width: 97%;
     margin-left: auto;
     margin-right: auto;
     height: 256px;
     margin: 10px 0;
     clear: both;
-    left: 249px
+    left: 250px
 }
 
 body.institutional.store #map_canvas::after {

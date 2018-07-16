@@ -66,8 +66,8 @@
                     </li> -->
 
                     <li>
-                    <a href="" class="boulevard" data-address="Rua Barão de São Francisco, 236">
-                        Boulevard Rio Shopping
+                    <a href="" class="boulevard" data-address="Rua Barão de São Francisco, 236 - 1º Piso - Lj 295">
+                        Boulevard Rio
                     </a>
                     </li>
 
@@ -197,22 +197,31 @@
             <p><strong>Telefone: </strong>21 2391-0551 / 21 2391-0552</p>  
         </div>
 
-        <!-- <div class="store viaparque" data-lat="-22.974283" data-lng="-43.364911">
+        <div class="store viaparque" data-lat="-22.974283" data-lng="-43.364911">
             <h2>Via Parque / Barra da Tijuca</h2>
             <p class="addressStore">
                 <strong>Endereço: </strong> 
                 <span>Av. Ayrton Senna, 3.000 - 2º Piso. lojas 2033-A e 2036-A</span>
             </p>            
             <p><strong>Telefone: </strong>21 3150-3861 / 21 3150-3872</p>  
-        </div> -->
+        </div>
 
-        <div class="store boulevard" data-lat="-22.918348673835972" data-lng="-43.25035010555723">
-            <h2>Boulevard Shopping Rio / Vila Isabel</h2>
+        <div class="store viabrasil" data-lat="-22.823121" data-lng="-43.319726">
+            <h2>Via Brasil Shopping / Irajá</h2>
             <p class="addressStore">
                 <strong>Endereço: </strong> 
-                <span>Rua Barão de São Francisco, 236</span>
+                <span>Rua Itapera, 500 lojas 156 a 161</span>
             </p>            
-            <p><strong>Telefone: </strong>21 3362-62010 / 21 3362-6011</p>  
+            <p><strong>Telefone: </strong>21 2471-3071</p>  
+        </div>
+
+        <div class="store boulevard" data-lat="-22.9193445" data-lng="-43.2501804">
+            <h2>Boulevard Rio / Vila Isabel</h2>
+            <p class="addressStore">
+                <strong>Endereço: </strong> 
+                <span>Rua Barão de São Francisco, 236 - 1º Piso - Lj 295</span>
+            </p>            
+            <p><strong>Telefone: </strong>21 3362-6010 / 21 3362-6011</p>  
         </div>
 
         <div class="store west" data-lat="-22.884637" data-lng="-43.557638">
@@ -337,7 +346,7 @@
 <!-- Map -->
 <div id="map_canvas"></div>
 <!-- .Map -->
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCYMvBGc5byXQhexAqj6k-mQ3vB11eRI9Y"></script>
 <script type="text/javascript">
     $(window).on('load',function() {
         var directionsDisplay;
@@ -349,7 +358,7 @@
         var maps = {
             toggleStores: function () {
                 $(".selectStore").find("span").on("click", function () {
-                    $(this).next("ul").slideToggle(400);
+                    $("ul.listStore").slideToggle(400);
                 });
             },
             
@@ -362,7 +371,7 @@
                     that.addClass("active");
                     $(".selectStore").find("span").text(cid).next("ul").slideToggle(400);
                     $(".contentStores .store").hide();
-                    var names = ".contentStores ." name;
+                    var names = ".contentStores ."   name;
                     $(names).fadeIn(400);
                 });
             },
@@ -387,9 +396,9 @@
                     cid = $(that).text();
                 event.preventDefault();
                 $(".contentStores").find(".store").removeClass("active");
-                $(".contentStores ." name).addClass("active");
-                var posLat = $(".contentStores ." name).attr("data-lat");
-                var posLng = $(".contentStores ." name).attr("data-lng");
+                $(".contentStores ."   name).addClass("active");
+                var posLat = $(".contentStores ."   name).attr("data-lat");
+                var posLng = $(".contentStores ."   name).attr("data-lng");
                 maps.initialize(posLat, posLng);
             });
             },
@@ -485,13 +494,6 @@
                 var triartisMarker = new google.maps.Marker({
                   position: myLatLng, 
                   map: map
-                });
-
-                //boulevard
-                var myLatLng = new google.maps.LatLng(-22.918348673835972, -43.25035010555723);
-                var triartisMarker = new google.maps.Marker({
-                  position: myLatLng, 
-                  map: map
                 }); 
 
                 //viabrasil
@@ -500,6 +502,13 @@
                 //   position: myLatLng, 
                 //   map: map
                 // }); 
+
+                //boulevard
+                var myLatLng = new google.maps.LatLng(-22.9193445, -43.2501804);
+                var triartisMarker = new google.maps.Marker({
+                  position: myLatLng, 
+                  map: map
+                }); 
 
                 //west
                 var myLatLng = new google.maps.LatLng(-22.884637, -43.557638);
@@ -565,8 +574,8 @@
             limpaImages();
             var className = (this.className.split(' '))?this.className.split(' ')[0]: this.className;
             console.log('class', className);
-            $( "." className "-image" ).addClass( "block" );        
-            $( "." className "-logo" ).addClass( "block" );  
+            $( "."  className  "-image" ).addClass( "block" );        
+            $( "."  className  "-logo" ).addClass( "block" );  
         }); 
 
     });

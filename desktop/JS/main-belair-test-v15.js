@@ -482,14 +482,14 @@ var product = {
 	    LoadZoom(0);
 	},
 
-	specification: function(){
-		if($("#caracteristicas .Especificacoes").length){
-			var content = $("#caracteristicas .Especificacoes").next("table").wrap("<div>").html();
+	// specification: function(){
+	// 	if($("#caracteristicas .Especificacoes").length){
+	// 		var content = $("#caracteristicas .Especificacoes").next("table").wrap("<div>").html();
 
-			$(".productRef").after("<div class='productSpec'><p>Medidas</p></div>");
-			$(".productSpec").append("<table>" + content + "</table>");
-		}
-	},
+	// 		$(".productRef").after("<div class='productSpec'><p>Medidas</p></div>");
+	// 		$(".productSpec").append("<table>" + content + "</table>");
+	// 	}
+	// },
 
 	qtdBuy: function(){
 		$(".buyProduct .prodQtd .addItem").on("click", function() {
@@ -784,7 +784,7 @@ var product = {
 
     inCashPrice: function () {
     	$('.inCashPrice').remove();
-    	$(".priceProduct").append("<div class='inCashPrice'></div>");
+    	$(".plugin-preco").append("<div class='inCashPrice'></div>");
 		var _this = $('.preco-a-vista');
         var pClub = _this.find(".skuPrice").text();
 		console.log(pClub);
@@ -797,7 +797,7 @@ var product = {
         pClubrNumString = pClubrNumString.split(".");
         var p = fns.numberWithCommas(pClubrNumString[0]);
 
-       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' de 1x a 6x no cartão</b>');
+       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' à vista</b>');
     },
 
     applyDiscount: function () {
@@ -838,8 +838,7 @@ var product = {
 
 	init: function(){
 		product.share();
-		product.superZoom(575,575)
-		product.specification();
+		product.superZoom(575,575);
 		product.qtdBuy();
 		ShippingValue();
 		fns.toggleBox();
