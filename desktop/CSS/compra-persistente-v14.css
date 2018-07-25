@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.compra-persistente-2 .buyProduct .priceProduct .productName{
+    display: none;
+}
+
 .compra-persistente-2 .buyProductButton {
     padding-bottom: 30px;
 }
@@ -49,6 +53,8 @@
     justify-content: space-evenly;
     align-items: center;
     width: 900px;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .compra-persistente-2 .buyProduct.compra-persistente .productName{
@@ -63,7 +69,6 @@
     margin-top: 10px;
 }
 
-.compra-persistente-2 .priceProduct,
 .compra-persistente-2 .buyProductButton {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
@@ -125,4 +130,8 @@
     font-size: 12px;
     color: red;
     text-decoration: line-through;
+}
+
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .productName{
+    display: block;
 }

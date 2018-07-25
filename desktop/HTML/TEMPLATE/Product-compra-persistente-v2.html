@@ -38,7 +38,7 @@
     
     <link href="/arquivos/header-persistente-v1.css" rel="stylesheet" type="text/css" />
     <link href="/arquivos/medidas-v3.css" rel="stylesheet" type="text/css" />
-    <link href="/arquivos/compra-persistente-v13.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/compra-persistente-v14.css" rel="stylesheet" type="text/css" />
     <style>.headerPersistente{z-index:100000000000 !important;}</style>
 </head>
 
@@ -174,7 +174,7 @@
     <script src="/arquivos/compra-persistente-v7.js"></script>
     
     <script type="text/javascript">
-        $(document).ajaxStop(function(){
+        $(document).ajaxComplete(function(){
             $(document).ready(function(){
                 $('.buyProduct').find('.fn.productName').remove();
                 $('.buyProduct .priceProduct').prepend($('.fn.productName').clone());
