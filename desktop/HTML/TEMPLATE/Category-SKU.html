@@ -3,34 +3,39 @@
 
 <head>
     <vtex:metaTags/>
-
+    
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
     <vtex:template id="commonHead" />
     <link href="/arquivos/skuVariacao.css" rel="stylesheet" type="text/css" />
-
+    
+    <style>
+    .shelfOverlay{ display:block !important }
+    .seomaster .filterOptions{display: none;}
+    </style>
+    
 </head>
 
 <body>
     <div class="all">
-
+        
         <!--testess-->
         <vtex:template id="Header-Persistente-N" />
-
+        
         <div id="mainContent">
             <div class="wrapper">
-
+                
                 <aside class="navSidebar">
-                    <div class="categoryOptions">
+                    <div class="categoryOptions"> 
                         <vtex.cmc:departmentNavigator/>
                     </div>
                      <div class="filterOptions">
                         <vtex.cmc:searchNavigator/>
                     </div>
                 </aside>
-
+                
                 <section class="pageContent">
                     <div class="topName">
                         <vtex.cmc:searchTitle />
@@ -49,11 +54,12 @@
         <vtex:template id="footer" />
     </div><!--/all-->
     <script src="/arquivos/vtex-smartResearch.min.js"></script>
-
-    <vtex:template id="commonBottom" />
+    
+    <vtex:template id="commonBottomNew" />
+    <script src="/arquivos/produto-similar-v2.js"></script>
     <!-- ss4 -->
-
+    
     <link href="/arquivos/descricao-v1.css" rel="stylesheet" type="text/css" />
-
+    
 </body>
 </html>
