@@ -3820,7 +3820,7 @@ body.institutional.store .storeSidebar .filterOptions .search-single-navigator h
 .bt-refinar,
 .refino-marca,
 .menu-departamento .search-filter-button {
-    display: none
+    display: none;
 }
 
 body.emptySearch .box-emptySearch {
@@ -5094,3 +5094,33 @@ body.home .shelf ul li{
         padding: 20px 0;
     }
 } */
+
+.searchResult .pager.bottom  {
+    display: block;
+}
+
+
+.searchResult .pager.bottom .pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 8px;
+}
+
+.searchResult .pager .page-number {
+    padding: 5px 8px;
+    border: 1px solid #00536E;
+    color: #00536E;
+    width: 25px;
+    text-align: center;
+}
+
+.searchResult .pager .page-number.pgCurrent {
+    color: #fff;
+    background-color: #00536E;
+    padding: 5px 8px;
+}
+
+.searchResult .pager .next, .searchResult .pager .last, .searchResult .pager .first, .searchResult .pager .previous {
+    color: #00536e;
+}
