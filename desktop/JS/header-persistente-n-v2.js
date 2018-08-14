@@ -1,6 +1,6 @@
 $(document).ready(function(){
 var minScroll = 90;
-=======
+
         var headerPersistente = (function() {
             var executou = false;
             return function() {
