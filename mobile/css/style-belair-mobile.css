@@ -2551,7 +2551,7 @@ select {
 }
 
 .mainProductInfo .productPrice .price-best-price:after {
-	content: 'à vista no boleto';
+	content: 'à vista 1x no CARTÃO DE CRÉDITO';
     display: inline-block;
     height: auto;
     vertical-align: bottom;

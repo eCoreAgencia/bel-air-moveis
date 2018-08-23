@@ -309,7 +309,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> á  vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 		    }
 		});
 	},
@@ -797,7 +797,7 @@ var product = {
         pClubrNumString = pClubrNumString.split(".");
         var p = fns.numberWithCommas(pClubrNumString[0]);
 
-       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' à vista</b>');
+       	$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' 1x no cartão</b>');
     },
 
     applyDiscount: function () {

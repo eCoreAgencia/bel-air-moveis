@@ -53,7 +53,7 @@ $(document).ready(function(){
 	        pClubrNumString = pClubrNumString.split(".");
 	        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> à vista</b>');
+	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 	    }
 	});
 
@@ -138,7 +138,7 @@ $(document).ready(function(){
 			pClubrNumString = pClubrNumString.split(".");
 			var p = fns.numberWithCommas(pClubrNumString[0]);
 
-			$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + 'à vista 1x no CARTÃO DE CRÉDITO</b>');
+			$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' 1x no cratão</b>');
 		}
 		
 	    inCashPrice();
