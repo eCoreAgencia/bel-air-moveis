@@ -328,7 +328,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> á  vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 		    }
 		});
 	},
@@ -824,13 +824,17 @@ var product = {
 
 	        var pClubrNumReal = $('.skuBestPrice').text();
 	        pClubrNumReal = pClubrNumReal.replace('R$ ', '').replace('.', '');
-	        pClubrNumReal = parseFloat(pClubrNumReal.replace(",", "."));
-	        pClubrNumReal = (pClubrNumReal * calc(numParcela)) / numParcela;
+			pClubrNumReal = parseFloat(pClubrNumReal.replace(",", "."));
+			if(numParcela == 1){
+				pClubrNumReal = pClubrNumReal * 0.95;
+			}
+	        pClubrNumReal = (pClubrNumReal * numParcela) / numParcela;
 	        pClubrNumReal = pClubrNumReal.toFixed(2);
 
 	        var pClubrNumString = pClubrNumReal.toString();
 	        pClubrNumString = pClubrNumString.split(".");
-	        var p = fns.numberWithCommas(pClubrNumString[0]);
+			var p = fns.numberWithCommas(pClubrNumString[0]);
+			
 
 	        $(this).html('<span>'+numParcela+'X de</span> <strong>R$ ' + p + ',' + pClubrNumString[1] + '</strong> <span class="complement">sem juros</span>');
     	})
