@@ -5165,3 +5165,7 @@ h4.sala-de-estar.even {
 .search-single-navigator{ 
     display: none !important;
 }
+
+#mainContent .topDepartment .navSidebar h5{
+    display: block ;
+}

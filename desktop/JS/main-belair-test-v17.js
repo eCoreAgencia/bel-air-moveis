@@ -445,8 +445,8 @@ var catalog = {
 	},
 
 	init: function  () {
-		if (!$("body").hasClass("department")) {
 			catalog.smartResearch();
+		if (!$("body").hasClass("department")) {
 			catalog.categoryResult();
 		};
 
