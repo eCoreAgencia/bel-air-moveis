@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.compra-persistente-2 .buyProduct .priceProduct .productName{
+.compra-persistente-2 .buyProduct .priceProduct .productName {
     display: none;
 }
 
@@ -38,17 +38,18 @@
     vertical-align: top;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .prodQtd{
+.compra-persistente-2 .buyProduct.compra-persistente .prodQtd {
     padding: 0 10px;
     margin: 0;
     display: none;
 }
+
 .compra-persistente-2 .mainProductInfo .buy-button {
     float: none;
     display: inline-block !important;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .priceProduct{
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -57,7 +58,7 @@
     padding-bottom: 0 !important;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .productName{
+.compra-persistente-2 .buyProduct.compra-persistente .productName {
     font-size: 16px;
     font-weight: lighter;
     text-transform: none;
@@ -80,58 +81,58 @@
     padding-bottom: 0 !important;
 }
 
-.compra-persistente-2 .headerPersistente{
+.compra-persistente-2 .headerPersistente {
     box-shadow: none;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .flagsClone{
+.compra-persistente-2 .buyProduct.compra-persistente .flagsClone {
     display: none;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente em.valor-dividido.price-installments span span label{
+.compra-persistente-2 .buyProduct.compra-persistente em.valor-dividido.price-installments span span label {
     font-size: 14px;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido strong{
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido strong {
     font-size: 1rem;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .plugin-preco{
+.compra-persistente-2 .buyProduct.compra-persistente .plugin-preco {
     text-align: right;
     width: 300px;
     padding: 7px 7px 7px 0;
 }
 
-.compra-persistente-2 .compra-persistente .trustvox-widget-rating span.rating-click-here{
+.compra-persistente-2 .compra-persistente .trustvox-widget-rating span.rating-click-here {
     text-transform: uppercase !important;
     vertical-align: text-bottom;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido{
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido {
     font-size: 1rem !important;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido:after{
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .valor-dividido:after {
     font-size: 13px !important;
 }
 
 .compra-persistente-2 .compra-persistente .buy-button {
     padding: 8px 12px;
     font-size: 1rem;
-} 
+}
 
 .compra-persistente-2 .compra-persistente .inCashPrice {
     font-size: 13px;
     margin-top: 0;
 }
 
-.compra-persistente-2 .compra-persistente .valor-de{
+.compra-persistente-2 .compra-persistente .valor-de {
     line-height: 1px;
     font-size: 12px;
     color: red;
     text-decoration: line-through;
 }
 
-.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .productName{
+.compra-persistente-2 .buyProduct.compra-persistente .priceProduct .productName {
     display: block;
 }

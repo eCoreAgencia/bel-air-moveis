@@ -431,3 +431,37 @@ html .add-service,
 html .btn-place-order-wrapper #cart-to-orderform{
     background-color: #51a351!important;
 }
+
+/* ALTERAÇÃO NA POSIÇÃO DOS BOTÕES */
+div.required.payment-group-list-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  
+  .payment-group-item {
+    margin: 4px 0 0;
+    border-radius: 5px;
+    border: solid 2px #eaeaea;
+  }
+  
+  a + a span.payment-group-item-text {
+    font-size: 0;
+  }
+  
+  a + a span.payment-group-item-text::before {
+    content: "5% de desconto 1x no cartão";
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1.5;
+  }

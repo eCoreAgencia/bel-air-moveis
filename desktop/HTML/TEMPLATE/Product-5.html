@@ -176,7 +176,8 @@
         $(document).ajaxStop(function(){
             $(document).ready(function(){
                 $('.buyProduct').find('.fn.productName').remove();
-                $('.buyProduct .priceProduct').prepend($('.fn.productName').clone());
+                $('.buyProduct .priceProduct').prepend($('.fn.productName').clone());   
+               
                 $('.tabs li').click(function(){
                     var myClass = $(this).attr('class');
 

@@ -53,7 +53,7 @@ $(document).ready(function(){
 	        pClubrNumString = pClubrNumString.split(".");
 	        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> à vista</b>');
+	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 	    }
 	});
 
@@ -138,7 +138,7 @@ $(document).ready(function(){
 			pClubrNumString = pClubrNumString.split(".");
 			var p = fns.numberWithCommas(pClubrNumString[0]);
 
-			$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + 'à vista 1x no CARTÃO DE CRÉDITO</b>');
+			$(".inCashPrice").html('ou R$ ' + p + ',' + pClubrNumString[1] + ' 1x no cartão</b>');
 		}
 		
 	    inCashPrice();
@@ -160,24 +160,29 @@ $(document).ready(function(){
 				return 1;
 			}
 
-	    	// $('.other-payment-method-ul .vista').attr('class','other-payment-method-Visa-1');
+			
+	    $('.other-payment-method-ul .vista').attr('class','other-payment-method-Visa-1');
 
-            // $('[class^="other-payment-method-Visa-"]').each(function () {
-            //     var numParcela = $(this).attr('class').split('-');
-            //     numParcela = numParcela[numParcela.length -1];
+    	$('[class^="other-payment-method-Visa-"]').each(function () {
+    		var numParcela = $(this).attr('class').split('-');
+    		numParcela = numParcela[numParcela.length -1];
 
-            //     var pClubrNumReal = $('.skuPrice').text();
-            //     pClubrNumReal = pClubrNumReal.replace('R$ ', '').replace('.', '');
-            //     pClubrNumReal = parseFloat(pClubrNumReal.replace(",", "."));
-            //     pClubrNumReal = (pClubrNumReal * calc(numParcela)) / numParcela;
-            //     pClubrNumReal = pClubrNumReal.toFixed(2);
+	        var pClubrNumReal = $('.skuBestPrice').text();
+	        pClubrNumReal = pClubrNumReal.replace('R$ ', '').replace('.', '');
+			pClubrNumReal = parseFloat(pClubrNumReal.replace(",", "."));
+			if(numParcela == 1){
+				pClubrNumReal = pClubrNumReal * 0.95;
+			}
+	        pClubrNumReal = (pClubrNumReal * numParcela) / numParcela;
+	        pClubrNumReal = pClubrNumReal.toFixed(2);
 
-            //     var pClubrNumString = pClubrNumReal.toString();
-            //     pClubrNumString = pClubrNumString.split(".");
-            //     var p = fns.numberWithCommas(pClubrNumString[0]);
+	        var pClubrNumString = pClubrNumReal.toString();
+	        pClubrNumString = pClubrNumString.split(".");
+			var p = fns.numberWithCommas(pClubrNumString[0]);
+			
 
-            //     $(this).html('<span>'+numParcela+'X de</span> <strong>R$ ' + p + ',' + pClubrNumString[1] + '</strong> <span class="complement">sem juros</span>');
-            // })
+	        $(this).html('<span>'+numParcela+'X de</span> <strong>R$ ' + p + ',' + pClubrNumString[1] + '</strong> <span class="complement">sem juros</span>');
+    	})
 		}
 
 		$(".trustvox-rate2 .rating-click-here").on("click", function(event){

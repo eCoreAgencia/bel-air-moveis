@@ -5143,13 +5143,25 @@ ul.productClusterSearchableIds.even {
     color: #403f44
 }
 
-.HideLargura, .HidePreco, .HideCor, .HideMarca{
+.HideLargura, .HidePreco, .HideCor{
     font-weight: 600;
     margin: 8px 0 2px;
+}
+
+.search-single-navigator .HideMarca,  .search-single-navigator .Marca {
+    display: none !important;
 }
 
 h4.sala-de-estar.even {
     font-size: 17px;
     font-weight: 600;
     margin-bottom:12px;
+}
+
+.search-multiple-navigator {
+    display: block !important;
+}
+
+.search-single-navigator{ 
+    display: none !important;
 }

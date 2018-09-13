@@ -307,7 +307,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> à vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 		    }
 		});
 	},
@@ -326,7 +326,7 @@ var global = {
 		        pClubrNumString = pClubrNumString.split(".");
 		        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> à vista</b>');
+		        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 		    }
 		});
 	},
@@ -775,7 +775,7 @@ var product = {
 	        pClubrNumString = pClubrNumString.split(".");
 	        var p = fns.numberWithCommas(pClubrNumString[0]);
 
-	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> à vista</b>');
+	        $(this).find(".bestPrice").html('<span>R$ ' + p + ',' + pClubrNumString[1] + '</span> 1x no cartão</b>');
 	    }        
     },
 
