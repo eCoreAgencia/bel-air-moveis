@@ -45,7 +45,7 @@ a.add-service.btn.btn-mini {
 
 a#bannerEbit { display: none !important; }
 
-.promocao {
+/*.promocao {
       border: solid #eee;
       padding: 18px 24px;
       background-color: white;
@@ -56,3 +56,12 @@ a#bannerEbit { display: none !important; }
     text-decoration: none;
     color:#008016a3;
   }
+
+
+
+.payment-group-item {
+  margin: 4px 0 0;
+  border-radius: 5px;
+  border: solid 2px #eaeaea;
+}
+*/ 

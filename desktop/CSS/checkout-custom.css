@@ -433,7 +433,7 @@ html .btn-place-order-wrapper #cart-to-orderform{
 }
 
 /* ALTERAÇÃO NA POSIÇÃO DOS BOTÕES */
-div.required.payment-group-list-btn {
+/* div.required.payment-group-list-btn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -447,7 +447,7 @@ div.required.payment-group-list-btn {
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
+  } */
   
   .payment-group-item {
     margin: 4px 0 0;
@@ -460,7 +460,7 @@ div.required.payment-group-list-btn {
   }
   
   a + a span.payment-group-item-text::before {
-    content: "5% de desconto 1x no cartão";
+    content: "5% de desconto (1x no cartão)";
     font-size: 12px;
     display: inline-block;
     line-height: 1.5;
