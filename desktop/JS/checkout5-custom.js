@@ -9,16 +9,17 @@ $('.add-service').each(function(){
   $(this).addClass('myTxt');
 });
 
-$( document ).ready(function() {
-	$('.summary').append('<ul class="promocao span7 pull-left">' +
-  	'      <li>' +
-  	'          Impermeabilize seu Sofá acima de <span style="color: red;">R$ 2190,00</span> e ganhe uma linda<span style="color: #008016a3;">' +
-    '              bandeja</span> de brinde.' +
-    '          </span></li>' +
-    '      <li>' +
-    '          Impermeabilize seu Sofá acima de <span style="color: red;">R$ 2490,00</span> e ganhe um lindo<span >' +
-    '             <a href="http://www.belairmoveis.com.br/painel-para-tv-fox/p"> Painel Fox</a></span> de brinde.' +
-    '      </li>' +
-    '  </ul>' 
-  );
-});
+
+// $( document ).ready(function() {
+// 	$('.summary').append('<ul class="promocao span7 pull-left">' +
+//   	'      <li>' +
+//   	'          Impermeabilize seu Sofá acima de <span style="color: red;">R$ 2190,00</span> e ganhe uma linda<span style="color: #008016a3;">' +
+//     '              bandeja</span> de brinde.' +
+//     '          </span></li>' +
+//     '      <li>' +
+//     '          Impermeabilize seu Sofá acima de <span style="color: red;">R$ 2490,00</span> e ganhe um lindo<span >' +
+//     '             <a href="http://www.belairmoveis.com.br/painel-para-tv-fox/p"> Painel Fox</a></span> de brinde.' +
+//     '      </li>' +
+//     '  </ul>' 
+//   );
+// });
