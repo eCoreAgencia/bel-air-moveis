@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <vtex:template id="commonHead" />
+    <link href="/arquivos/skuVariacao.css" rel="stylesheet" type="text/css" />
+
+    <style>
+    .shelfOverlay{ display:block !important }
+    .seomaster .filterOptions{display: none;}
+    </style>
+
+</head>
+
+<body>
+    <div class="all">
+
+        <!--testess-->
+        <vtex:template id="Header-Persistente-N" />
+
+        <div id="mainContent">
+            <div class="wrapper">
+
+                <aside class="navSidebar">
+                    <div class="categoryOptions">
+                        <vtex.cmc:departmentNavigator/>
+                    </div>
+                     <div class="filterOptions">
+                        <vtex.cmc:searchNavigator/>
+                    </div>
+                </aside>
+
+                <section class="pageContent">
+                    <div class="topName">
+                        <vtex.cmc:searchTitle />
+                    </div>
+                    <vtex.cmc:searchResult layout="ab173738-30fb-49e9-802e-f4583e68c495" itemCount="48" columnCount="48" />
+                </section>
+
+                <section class="txtContent">
+                    <!-- placeholder para conteudo da pagina. Template unico, o conteudo é alterado somente pelo placeholder  -->
+                    <vtex:contentPlaceHolder id="Seo-Departamento" />
+                </section>
+
+            </div><!-- /wrapper -->
+        </div><!-- /mainContent-->
+
+        <vtex:template id="footer" />
+    </div><!--/all-->
+    <script src="/arquivos/homolog-vtex-smartResearch.min.js?v=1.0.0"></script>
+
+    <vtex:template id="commonBottomNew" />
+    <script src="/arquivos/produto-similar-v2.js?v=1.0.0"></script>
+    <!-- ss4 -->
+
+    <link href="/arquivos/descricao-v1.css" rel="stylesheet" type="text/css" />
+
+</body>
+</html>

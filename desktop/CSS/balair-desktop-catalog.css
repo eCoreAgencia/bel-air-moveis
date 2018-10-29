@@ -1,0 +1,23 @@
+body.catalog .pager {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+body.catalog ul.pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+body.catalog ul.pages li {
+  margin: 0 10px;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+body.catalog ul.pages li:hover {
+  background-color: #00536e;
+  color: #fff;
+}
